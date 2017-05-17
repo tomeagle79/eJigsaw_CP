@@ -72,7 +72,7 @@
 			</div>
 
 			<div class="blog-search blog-border-box">
-
+				<?php get_search_form(); ?>
 			</div>
 
 		</div>
