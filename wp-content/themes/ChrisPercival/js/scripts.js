@@ -23,6 +23,8 @@ jQuery(document).ready(function($){
         
         });
 
+// Toggles nav on and off when icon clicked
+
         $(".button a").click(function(){
         //$(".overlay").fadeToggle(200);
             $("nav").toggleClass('responsive');
@@ -38,10 +40,6 @@ jQuery(document).ready(function($){
             // console.log(headerHeight);
   
     });
-
-
-   
-
 });
 
 
