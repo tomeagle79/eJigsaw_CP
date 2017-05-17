@@ -51,17 +51,24 @@
 				<li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
 
 				<!-- Display the Post Excerpt -->
-				<li><?php // the_excerpt(__('(more…)')); ?></li>
+				<!-- <li><?php the_excerpt(__('(more…)')); ?></li> -->
 
 				<!-- Repeat the process and reset once it hits the limit -->
 				<?php endwhile;	wp_reset_postdata(); ?>
+				</ul>
+
+				<ul class="hidden">
+					<li>sfg</li>
+					<li>sfg</li>
+					<li>sfg</li>
+					<li>sfg</li>
 				</ul>
 
 			</div>
 
 			<div class="blog-categories blog-border-box">
 				<h2>CATEGORIES</h2>
-				<ul><?php wp_list_categories(); ?></ul>
+				<ul><?php wp_list_categories('title_li='); ?></ul>
 			</div>
 
 			<div class="blog-search blog-border-box">

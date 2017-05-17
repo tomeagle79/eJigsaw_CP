@@ -13,10 +13,12 @@ div.blog-page-sidebar {
 
 div.blog-categories, div.blog-recent-posts {
 		ul {
-			// margin-left: 10px;
+			margin-left: 10px;
+			
 			li {
-				display: block;
-				list-style-type: inherit !important;
+				display: list-item;
+				color: $font-gray;
+				font-size: 13px;
 				a {
 					color: $font-gray;
 					font-size: 13px;
