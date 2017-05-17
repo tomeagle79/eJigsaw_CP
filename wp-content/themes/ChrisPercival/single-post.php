@@ -14,21 +14,17 @@
 						
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			
-				<div class="blog-post blog-border-no-sides clearfix">
+				<div class="blog-post blog-border-box clearfix">
 					
-					<div class="blog-left blog-post-section">
+					<div class="blog-post-section">
+						<h2 class="h2-blog"><?php the_title(); ?></h2>
 						<div class="blog-img-wrapper">
-							<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+							<?php the_post_thumbnail('full'); ?>
 						</div>	
-					</div>
-
-					<div class="blog-right blog-post-section">
-						<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
-						<hr>
 						<p>DATE <?php the_time('Y'); ?></p>
-						<p><?php the_excerpt(); ?></p>
-						<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
-						
+						<button>SHARE</button>
+						<p><?php the_content(); ?></p>
+												
 					</div>
 				</div>
 
@@ -37,6 +33,7 @@
 			<?php endif; ?>
 
 			<div class="pagination">
+				<?php the_post_navigation() ?>
 				<p>Add pagination here - left and right thumbnails</p>
 			</div>
 
@@ -59,6 +56,7 @@
 				<!-- <li><?php the_excerpt(__('(more…)')); ?></li> -->
 
 				<!-- Repeat the process and reset once it hits the limit -->
+
 				<?php endwhile;	wp_reset_postdata(); ?>
 				</ul>
 
