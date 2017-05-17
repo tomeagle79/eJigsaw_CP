@@ -1,12 +1,9 @@
 <?php 
 
 // This is the template to display search results
-
 get_header(); 
 
-
 ?>
-
 
 <div class="main-blog main clearfix">
 		
@@ -18,18 +15,15 @@ get_header();
 		
 			<div class="blog-border-box">
 				<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
-				<p><a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a></p>
-				<p><?php the_content(); ?></p>
+				<p><a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail(''); ?></a></p>
+				<p><?php the_excerpt(); ?></p>
 			</div>
 
 		<?php endwhile; else : ?>
-				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<p><?php _e( 'Sorry, no results matched your criteria.' ); ?></p>
 		<?php endif; ?>
 		
 	</section>
-
-	
-
 
 </div>
 

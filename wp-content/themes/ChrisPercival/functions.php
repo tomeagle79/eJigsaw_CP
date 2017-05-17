@@ -60,4 +60,18 @@ function custom_excerpt_length( $length ) {
 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+/**
+ * Modify the document title for the search page
+ */
+add_filter( 'document_title_parts', function( $title )
+{
+    if ( is_search() ) 
+        $title['title'] = sprintf( 
+            esc_html__( '&#8220;%s&#8221; result page', 'my-theme-domain' ), 
+            get_search_query() 
+        );
+
+    return $title;
+} );
+
 ?>
