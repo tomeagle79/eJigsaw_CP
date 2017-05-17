@@ -35,7 +35,10 @@
 			<?php endwhile; else : ?>
 					<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
-		</div>
+			<div class="pagination">
+				<p>Add pagination here - numbered list</p>
+			</div>
+		</div> <!-- end of blog page right section -->
 
 		<div class="blog-page-sidebar">
 			<div class="blog-recent-posts blog-border-box">
@@ -69,14 +72,8 @@
 			</div>
 
 		</div>
-
-
-
 		
 	</section>
-
-	
-
 
 </div>
 
