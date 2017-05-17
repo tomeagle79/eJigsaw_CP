@@ -1,0 +1,212 @@
+/*!
+Theme Name: Chris Percival Personal Page
+Author: Tom Eagle
+Author URI: http://www.tomeagle.io
+Description: Personal Webpage for Chris Percival
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Black, Dark
+ 
+*/
+
+@import "base/_variables.scss";
+
+@import "base/_mixins.scss";
+//@import "base/_reset.scss";
+//@import "base/_base.scss";
+
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+//@import "layout/_nav.scss";
+@import "layout/_carousel.scss";
+@import "layout/_contact.scss";
+@import "layout/_charity.scss";
+@import "layout/_blog.scss";
+
+@import "modules/_typography.scss";
+@import "modules/_buttons.scss";
+@import "modules/_blocks.scss";
+@import "modules/_components.scss";
+
+@import "media/_media.scss";
+
+html {
+	background-color: lightgray;
+}
+
+body {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1 {
+	font-size: 43px;
+	font-weight: 100;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: $dark-blue;
+	border-bottom: 3px solid $dark-blue;
+	display: inline-block;
+    padding-right: 45px;
+    line-height: 50px;
+    margin: 0;
+}
+
+p {
+font-family: 'Raleway', sans-serif;
+}
+
+section.first {
+	padding-top: 150px;
+}
+
+section.contact-form {
+	
+}
+
+// Top slider section homepage
+
+#slider-container {
+
+}
+
+div.slick-slider-wrapper::before {
+	content: '';
+}
+
+.slick-slide img {
+	width: 100%;
+	height: auto;
+}
+
+ul.slick-dots {
+	bottom: 48px;
+		li {
+
+			button {
+				border-radius: 50%;
+				border: 3px solid white;
+				background-color: white;
+
+					&::before  {
+						content: '';
+						width: 15px;
+					}
+				}
+
+				&.slick-active {
+							button {
+								background-color: transparent;
+							}
+						}
+
+		}
+	}
+
+// Bottom slick slider homepage
+
+div#slider-jigsaw {
+
+	button.slick-prev.slick-arrow {
+	    background-image: url('http://localhost/ChrisPercival/wp-content/uploads/2017/05/leftJigsaw.png');
+	    background-repeat: no-repeat;
+	    width: 20px;
+	    height: 25px;
+	    left: 50px !important;
+	}
+
+	.slick-prev:before {
+	    content: '' !important;
+	}
+
+	button.slick-next.slick-arrow {
+	    background-image: url('http://localhost/ChrisPercival/wp-content/uploads/2017/05/rightJigsaw.png');
+	    background-repeat: no-repeat;
+	    width: 20px;
+	    height: 25px;
+	    right: 50px !important;
+	}
+
+	.slick-next:before {
+	    content: '' !important;
+	}
+}
+
+
+
+.main {
+background: #fff;
+padding: 0 12.5%;
+}
+
+.clearfix {
+	after {
+		content: "";
+	    display: table;
+	    clear: both;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+section#social {
+	
+	padding: 65px 0;
+	background-color: #fff;
+
+	ul#social-cards {
+		width: 100%;
+		display: block;
+		text-align: center;
+	li {
+		width: 25%;
+		display: inline-block;
+		text-align: center;
+		color: $dark-blue;
+
+		img {
+			width: 100px;
+			
+			&.ellipse {
+			    width: 50px !important;
+			}
+		}
+
+		
+
+		h3 {
+			font-size: 24px;
+			font-family: 'Anton', sans-serif;
+			font-weight: 100 !important;
+			letter-spacing: 2px;
+		}
+
+		p {
+			    width: 76%;
+			    max-width: 190px;
+			    font-family: 'Raleway', Helvetica;
+			    font-size: 19px;
+			    line-height: 1.2;
+			    text-align: center;
+			    margin: 0 auto;
+		}
+
+		p.ellipse {
+			font-size: 30px;
+		}
+	}
+}
+}
+
+section#bottom-slider-container {
+	height: 640px;
+	background-color: rgb(197, 213, 227);
+}

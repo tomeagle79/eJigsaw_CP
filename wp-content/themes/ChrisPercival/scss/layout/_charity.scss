@@ -1,0 +1,80 @@
+section.charity-first {
+    padding: 0 12.5%;
+}
+
+p.p-charity {
+	font-size: 25px;
+  	color: rgb(170, 170, 170);
+}
+
+
+div#slick-slider-charity {
+
+	margin: 30px 0;
+
+	#slick-slider-1, #slick-slider-2 {
+		padding: 0px 7%;
+	}
+
+// The following vertically aligns the individual slides
+
+	.slide.slick-slide {
+	    float: none;
+	    display: inline-block !important;
+	    vertical-align: middle;
+	}
+
+	.slide__inner {
+	    padding: 0 17%;
+	}
+
+	button.slick-prev.slick-arrow {
+	    background-image: url('http://localhost/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-left.png');
+	    background-repeat: no-repeat;
+	    width: 20px;
+	    height: 25px;
+	    left: 0px !important;
+	}
+
+	.slick-prev:before {
+	    content: '' !important;
+	}
+
+	button.slick-next.slick-arrow {
+	    background-image: url('http://localhost/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-right.png');
+	    background-repeat: no-repeat;
+	    width: 20px;
+	    height: 25px;
+	    right: 0px !important;
+	}
+
+	.slick-next:before {
+	    content: '' !important;
+	}
+
+}
+
+
+// Removes gap below sliders 
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
+
+// show/hide relevant charity sliders
+
+	div.charity-slider-2 {
+		display: none;
+	}
+
+@media screen and (max-width: 500px){
+	div.charity-slider-1 {
+		display: none !important;
+	}
+
+	div.charity-slider-2 {
+		display: block;
+	}
+
+
+}

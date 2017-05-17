@@ -1,0 +1,141 @@
+div.main-blog {
+	background-color: $blog-blue;
+}
+
+div.blog-page-sidebar {
+	width: 25%;
+	float: left;
+
+		h2 {
+			@include dark;
+			text-align: center;
+		}
+
+div.blog-categories {
+		ul {
+			li {
+				display: block;
+				a {
+					color: #000;
+				}
+			}
+		}
+	}
+	
+}
+
+div.blog-page-right {
+	width: 75%;
+	float: right;
+	padding-left: 2%;
+}
+
+div.blog-post {
+	color: #a0a0a0;
+		
+		h2 {
+			a {
+				color: #a0a0a0;
+			}
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		button {
+			border: none;
+			background-color: #a0a0a0;
+			color: white;
+			font-family: 'Raleway', sans-serif;
+			font-variant: small-caps;
+			padding: 5px;
+			float: right;
+
+				img {
+					width: 16px;
+    				margin-left: 10px;
+				}
+		}
+	}
+
+.blog-post-section {
+	float: left;
+	padding: 0 2%;
+}
+.blog-left {
+	width: 40%;
+	
+
+		.blog-img-wrapper {
+			position: relative;
+			height: 225px;
+			overflow: hidden;
+
+			img {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				width: inherit !important;
+			}
+
+		}
+}
+
+.blog-right {
+	width: 60%;
+}
+
+.blog-border-no-sides {
+	border-top: 2px solid $dark-blue;
+	border-bottom: 2px solid $dark-blue;
+	margin-top: 20px;
+    padding: 4% 0;
+    background: transparent;
+}
+
+div.blog-border-box {
+
+	border: 2px solid $dark-blue;
+	margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+
+    	&:last-child {
+    		margin-bottom: 20px;
+    	}
+}
+
+h2.h2-blog {
+	font-size: 18px;
+  	font-family: "Raleway";
+  	color: rgb(160, 160, 160);
+  	font-weight: bold;
+  	line-height: 1.2;
+  	margin-top: 0;
+}
+
+img.attachment-full.size-full.wp-post-image {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 800px) {
+	div.blog-page-sidebar {
+	width: 100%;
+	float: left;
+
+		h2 {
+			@include dark;
+			text-align: center;
+		}
+}
+
+div.blog-page-right {
+	width: 100%;
+	float: left;
+	padding-left: 2%;
+}
+}
+
+
