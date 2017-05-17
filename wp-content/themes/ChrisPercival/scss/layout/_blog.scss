@@ -3,17 +3,18 @@ div.main-blog {
 }
 
 div.blog-page-sidebar {
-	width: 25%;
+	width: 36%;
 	float: left;
 
 		h2 {
 			@include dark;
 			text-align: center;
+			margin: 0;
 		}
 
 div.blog-categories, div.blog-recent-posts {
 		ul {
-			margin-left: 10px;
+			margin-left: 20px;
 			
 			li {
 				display: list-item;
@@ -45,9 +46,66 @@ div.blog-categories, div.blog-recent-posts {
   z-index: 159;
 }
 
+/* ****************** Search form ************************************ */
+
+form#searchform {
+	label {
+		font-family: 'Raleway', sans-serif;
+		color: $font-gray;
+		font-size: 13px;
+		float: left;
+	}
+
+	input#s {
+		float: right;
+		width: 70%;
+		height: 20px;
+		color: $font-gray;
+		font-size: 13px;
+	}
+
+}
+
+/*********************************************************/
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+  width: 100%;
+  float: right;
+}
+
+.search input {
+  width: '';
+  height: 32px;
+
+  // background: #fcfcfc;
+  // border: 1px solid #aaa;
+  // border-radius: 5px;
+  // box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { 
+	text-indent: '';
+}
+
+.search .fa-search { 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+
+
+/***********************************************************/
+
+/******************* Right hand section  *****************************/
+
 
 div.blog-page-right {
-	width: 75%;
+	width: 64%;
 	float: right;
 	padding-left: 2%;
 }
@@ -114,6 +172,10 @@ div.blog-post {
 	margin-top: 20px;
     padding: 4% 0;
     background: transparent;
+
+	    &:last-child {
+	    		margin-bottom: 20px;
+	    }
 }
 
 div.blog-border-box {
@@ -125,7 +187,7 @@ div.blog-border-box {
 
     	&:last-child {
     		margin-bottom: 20px;
-    	}
+    }
 }
 
 h2.h2-blog {

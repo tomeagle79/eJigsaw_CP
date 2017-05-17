@@ -48,20 +48,13 @@
 				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
 				<!-- Display the Post Title with Hyperlink -->
-				<li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+				<li><a href="<?php the_permalink() ?>"><?php the_title(); ?><span>&nbsp;DATE&nbsp;</span><?php the_time('Y'); ?></a></li>
 
 				<!-- Display the Post Excerpt -->
 				<!-- <li><?php the_excerpt(__('(more…)')); ?></li> -->
 
 				<!-- Repeat the process and reset once it hits the limit -->
 				<?php endwhile;	wp_reset_postdata(); ?>
-				</ul>
-
-				<ul class="hidden">
-					<li>sfg</li>
-					<li>sfg</li>
-					<li>sfg</li>
-					<li>sfg</li>
 				</ul>
 
 			</div>
@@ -71,7 +64,7 @@
 				<ul><?php wp_list_categories('title_li='); ?></ul>
 			</div>
 
-			<div class="blog-search blog-border-box">
+			<div class="blog-search blog-border-box clearfix">
 				<?php get_search_form(); ?>
 			</div>
 
