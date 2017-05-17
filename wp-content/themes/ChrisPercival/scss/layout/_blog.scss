@@ -11,18 +11,38 @@ div.blog-page-sidebar {
 			text-align: center;
 		}
 
-div.blog-categories {
+div.blog-categories, div.blog-recent-posts {
 		ul {
+			// margin-left: 10px;
 			li {
 				display: block;
+				list-style-type: inherit !important;
 				a {
-					color: #000;
+					color: $font-gray;
+					font-size: 13px;
 				}
 			}
 		}
 	}
-	
 }
+
+.Lorem_ipsum_dolor_sit_amet___date_2017 {
+  font-size: 13px;
+  font-family: "Raleway";
+  color: rgb(160, 160, 160);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 0.99604855824232,0,0,0.99784126005322,0,0);
+  -webkit-transform: matrix( 0.99604855824232,0,0,0.99784126005322,0,0);
+  -ms-transform: matrix( 0.99604855824232,0,0,0.99784126005322,0,0);
+  position: absolute;
+  left: 1018.954px;
+  top: 465.924px;
+  width: 230.874px;
+  height: 13px;
+  z-index: 159;
+}
+
 
 div.blog-page-right {
 	width: 75%;
