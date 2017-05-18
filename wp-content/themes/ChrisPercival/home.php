@@ -36,13 +36,15 @@
 					<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
 			<div class="pagination">
-				<p>Add pagination here - numbered list</p>
+				<p>Add pagination here - list</p>
+				<p><?php wpbeginner_numeric_posts_nav(); ?></p>
 			</div>
 		</div> <!-- end of blog page right section -->
 
 		<div class="blog-page-sidebar">
 			<div class="blog-recent-posts blog-border-box">
 				<h2>RECENT POSTS</h2>
+
 				<ul>
 				<!-- Define our WP Query Parameters -->
 				<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
