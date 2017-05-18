@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template name: Custom query page
+Home page
 */
 
 ?>
@@ -23,11 +23,11 @@ Template name: Custom query page
 
 <?php
 
-$paged = ( get_query_var('page')) ? get_query_var('page') : 1;
+$paged = ( get_query_var('paged')) ? get_query_var('paged') : 1;
 $query_args = array(
 
 	'post_type' => 'post',
-	'posts_per_page' => 5,
+	'posts_per_page' => 2,
 	'paged' => $paged
 
 );
@@ -49,7 +49,7 @@ $query_args = array(
 		<div class="blog-right blog-post-section">
 			<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
 			<hr>
-			<p>DATE <?php the_time('Y'); ?></p>
+			<p>DATE <?php the_time('F j, Y'); the_time('g:i a'); ?></p>
 			<p><?php the_excerpt(); ?></p>
 			<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
 			
@@ -58,6 +58,25 @@ $query_args = array(
 
 <?php endwhile; ?>
 
+<!--           If max number pages > 1, show pagination                      -->
+<?php if ($the_query->max_num_pages > 1) { ?>
+
+	<nav class="prev-next-posts">
+	    <div class="prev-posts-link">
+	      <?php echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?>
+	    </div>
+	    <div class="next-posts-link">
+	      <?php echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?>
+	    </div>
+  	</nav>
+
+
+<?php } ?>
+
+<?php 
+// clean up after our query
+wp_reset_postdata(); 
+?>
 
 <?php else: ?>
 
