@@ -1,12 +1,3 @@
-<?php
-
-/*
-Template name: Custom query page
-*/
-
-?>
-
-
 <?php get_header(); ?>
 
 <!-- This is the template for the main blog post page - home.php -->
@@ -23,38 +14,39 @@ Template name: Custom query page
 
 <?php
 
-$paged = ( get_query_var('page')) ? get_query_var('page') : 1;
+$paged = ( get_query_var('paged')) ? get_query_var('paged') : 1;
 $query_args = array(
 
 	'post_type' => 'post',
-	'posts_per_page' => 5,
+	'category_name' => '',
+	'posts_per_page' => '3',
 	'paged' => $paged
 
 );
 
 ?>
 
-<?php $the_query = new WP_Query( $query_args ); ?>
 
-<?php if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
+
+<?php if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) : the_post(); ?>
 
 	<div class="blog-post blog-border-no-sides clearfix">
-		
-		<div class="blog-left blog-post-section">
-			<div class="blog-img-wrapper">
-				<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
-			</div>	
-		</div>
+					
+					<div class="blog-left blog-post-section">
+						<div class="blog-img-wrapper">
+							<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+						</div>	
+					</div>
 
-		<div class="blog-right blog-post-section">
-			<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
-			<hr>
-			<p>DATE <?php the_time('Y'); ?></p>
-			<p><?php the_excerpt(); ?></p>
-			<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
-			
-		</div>
-	</div>
+					<div class="blog-right blog-post-section">
+						<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
+						<hr>
+						<p>DATE <?php the_time('Y'); ?></p>
+						<p><?php the_excerpt(); ?></p>
+						<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
+						
+					</div>
+				</div>
 
 <?php endwhile; ?>
 

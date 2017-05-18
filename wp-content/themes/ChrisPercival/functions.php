@@ -149,15 +149,4 @@ function wpbeginner_numeric_posts_nav() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ?>
