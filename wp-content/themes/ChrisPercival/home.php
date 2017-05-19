@@ -61,15 +61,43 @@ $query_args = array(
 <!--           If max number pages > 1, show pagination                      -->
 <?php if ($the_query->max_num_pages > 1) { ?>
 
-	<nav class="prev-next-posts">
+	<nav class="prev-next-posts hidden">
 	    <div class="prev-posts-link">
 	      <?php echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?>
 	    </div>
 	    <div class="next-posts-link">
 	      <?php echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?>
+
 	    </div>
   	</nav>
 
+	<nav class="pagination">
+		<h2>This is the pagination</h2>
+
+		<?php echo paginate_links( $args ); ?>
+
+		<?php
+			$args =	array(
+					'base'               => '%_%',
+					'format'             => '?paged=%#%',
+					'total'              => $wp_query->max_num_pages,
+					'current'            => 0,
+					'show_all'           => false,
+					'end_size'           => 1,
+					'mid_size'           => 2,
+					'prev_next'          => true,
+					'prev_text'          => __('« Previous'),
+					'next_text'          => __('Next »'),
+					'type'               => 'plain',
+					'add_args'           => false,
+					'add_fragment'       => '',
+					'before_page_number' => '',
+					'after_page_number'  => ''
+			);
+		 ?>
+
+		 <?php the_posts_pagination(  ); ?>
+	</nav>
 
 <?php } ?>
 
