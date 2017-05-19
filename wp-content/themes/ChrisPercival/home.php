@@ -27,7 +27,7 @@ $paged = ( get_query_var('paged')) ? get_query_var('paged') : 1;
 $query_args = array(
 
 	'post_type' => 'post',
-	'posts_per_page' => 2,
+	'posts_per_page' => 5,
 	'paged' => $paged
 
 );
@@ -86,8 +86,8 @@ $query_args = array(
 					'end_size'           => 1,
 					'mid_size'           => 2,
 					'prev_next'          => true,
-					'prev_text'          => __('« Previous'),
-					'next_text'          => __('Next »'),
+					'prev_text'          => __('<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-left.png" alt="left arrow">'),
+					'next_text'          => __('<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-right.png" alt="right arrow">'),
 					'type'               => 'plain',
 					'add_args'           => false,
 					'add_fragment'       => '',
@@ -96,7 +96,7 @@ $query_args = array(
 			);
 		 ?>
 
-		 <?php the_posts_pagination(  ); ?>
+		 <!-- ?php the_posts_pagination(  ); ? -->
 	</nav>
 
 <?php } ?>
