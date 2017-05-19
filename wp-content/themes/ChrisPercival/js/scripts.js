@@ -40,7 +40,21 @@ jQuery(document).ready(function($){
             // console.log(headerHeight);
   
     });
-});
+
+
+   // Shows/hides the social sharing options
+
+        $("#social-share-icon").click(function(){
+                
+                    $("ul.social-share").toggle(300, 'swing');
+                
+                });
+
+
+
+
+
+        });
 
 
 (function($) {

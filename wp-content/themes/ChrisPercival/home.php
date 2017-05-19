@@ -42,14 +42,14 @@ $query_args = array(
 		
 		<div class="blog-left blog-post-section">
 			<div class="blog-img-wrapper">
-				<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+				<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail(''); ?></a>
 			</div>	
 		</div>
 
 		<div class="blog-right blog-post-section">
 			<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
 			<hr>
-			<p>DATE <?php the_time('F j, Y'); the_time('g:i a'); ?></p>
+			<p>DATE <?php the_time('Y'); ?></p>
 			<p><?php the_excerpt(); ?></p>
 			<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
 			

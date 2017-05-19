@@ -123,12 +123,26 @@ div.blog-post {
 	}
 
 .blog-post-section {
-	float: left;
+	// float: left;
 	padding: 0 2%;
+
+	h1 {
+		font-size: 18px;
+	  	font-family: "Raleway";
+	  	color: rgb(160, 160, 160);
+	  	font-weight: bold;
+	  	line-height: 1.2;
+	  	border: 0;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 .blog-left {
 	width: 40%;
-	
+	float: left;
 
 		.blog-img-wrapper {
 			position: relative;
@@ -147,6 +161,7 @@ div.blog-post {
 
 .blog-right {
 	width: 60%;
+	float: right;
 }
 
 .blog-border-no-sides {
@@ -201,7 +216,7 @@ img.attachment-full.size-full.wp-post-image {
 div.blog-page-right {
 	width: 100%;
 	float: left;
-	padding-left: 2%;
+	padding-left: 0;
 }
 }
 
@@ -254,4 +269,40 @@ nav.pagination {
 			
 		}
 	}
+}
+
+/******** Social share icons ***********************/
+
+#social-share-icon {
+	position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #3a97b5;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+ul.social-share{
+	display: none;
+	padding:10px;
+	margin:0;
+	background-color: $dark-blue;
+}
+ul.social-share li{
+	list-style:none;
+	display:inline-block;
+	margin:0 0.8em 1em 0;
+	font-size:1em;
+}
+ul.social-share li a{
+	font-size:20px;
+}
+ul.social-share li a, ul.social-share li a:hover{
+	text-decoration:none;
+}
+ul.social-share li i{
+	font-size:20px;
+	margin-right:5px;
 }
