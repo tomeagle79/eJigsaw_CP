@@ -72,7 +72,7 @@ $query_args = array(
   	</nav>
 
 	<nav class="pagination">
-		<h2>This is the pagination</h2>
+		<h2>This is the paggination</h2>
 
 		<?php echo paginate_links( $args ); ?>
 
@@ -86,8 +86,8 @@ $query_args = array(
 					'end_size'           => 1,
 					'mid_size'           => 2,
 					'prev_next'          => true,
-					'prev_text'          => __('<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-left.png" alt="left arrow">'),
-					'next_text'          => __('<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-right.png" alt="right arrow">'),
+					'prev_text'          => __('<span>PREVIOUS</span>'),
+					'next_text'          => __('<span>NEXT</span>'),
 					'type'               => 'plain',
 					'add_args'           => false,
 					'add_fragment'       => '',
