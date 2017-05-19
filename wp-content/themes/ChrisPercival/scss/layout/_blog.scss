@@ -238,36 +238,20 @@ $pag-margin: 20px;
 
 /******** Numeric pagination on blogs page ********************/
 
-/*
-.navigation li a,
-.navigation li a:hover,
-.navigation li.active a,
-.navigation li.disabled {
-	color: #fff;
-	text-decoration:none;
-}
+nav.pagination {
 
-.navigation li {
-	display: inline;
-}
+	a.page-numbers, span.page-numbers {
+		color: $font-gray;
+		font-size: 14px;
+		font-family: 'Raleway', sans-serif;
+			
+			&:first-of-type:before {
+				content: '';
+			}
 
-.navigation li a,
-.navigation li a:hover,
-.navigation li.active a,
-.navigation li.disabled {
-	background-color: #6FB7E9;
-	border-radius: 3px;
-	cursor: pointer;
-	padding: 12px;
-	padding: 0.75rem;
-}
-
-.navigation li a:hover,
-.navigation li.active a {
-	background-color: #3C8DC5;
-}
-*/
-
-nav.navigation.pagination {
-	color: $font-gray;
+			&:before {
+			content: ' ';
+			
+		}
+	}
 }

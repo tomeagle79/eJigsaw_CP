@@ -61,33 +61,21 @@ $query_args = array(
 <!--           If max number pages > 1, show pagination                      -->
 <?php if ($the_query->max_num_pages > 1) { ?>
 
-	<nav class="prev-next-posts hidden">
-	    <div class="prev-posts-link">
-	      <?php echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?>
-	    </div>
-	    <div class="next-posts-link">
-	      <?php echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?>
-
-	    </div>
-  	</nav>
-
 	<nav class="pagination">
-		<h2>This is the paggination</h2>
-
-		<?php echo paginate_links( $args ); ?>
-
+		<h2 class="hidden">This is the paggination</h2>
+		
 		<?php
-			$args =	array(
+			$pag_args =	array(
 					'base'               => '%_%',
 					'format'             => '?paged=%#%',
 					'total'              => $wp_query->max_num_pages,
 					'current'            => 0,
 					'show_all'           => false,
-					'end_size'           => 1,
-					'mid_size'           => 2,
+					'end_size'           => 2,
+					'mid_size'           => 5,
 					'prev_next'          => true,
-					'prev_text'          => __('<span>PREVIOUS</span>'),
-					'next_text'          => __('<span>NEXT</span>'),
+					'prev_text'          => '<span>Any text Previous</span>',
+					'next_text'          => '<span>Any text Previous</span>',
 					'type'               => 'plain',
 					'add_args'           => false,
 					'add_fragment'       => '',
@@ -95,8 +83,20 @@ $query_args = array(
 					'after_page_number'  => ''
 			);
 		 ?>
+		
+		
+		<br />
+		<p ><?php echo paginate_links( array(
 
-		 <!-- ?php the_posts_pagination(  ); ? -->
+			  'prev_text' => '<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-left.png" alt="previous" />',
+			  'next_text' => '<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-right.png" alt="next" />',
+			  'before_page_number' => '',
+					'after_page_number'  => ''
+
+			) ); ?></p>
+
+		<br />
+
 	</nav>
 
 <?php } ?>
