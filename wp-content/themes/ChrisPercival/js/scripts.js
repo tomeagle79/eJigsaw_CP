@@ -1,6 +1,8 @@
 // Script to show/hide the navigation bar
 
 jQuery(document).ready(function($){
+
+    /*
         
         $("#menu-icon").click(function(){
         
@@ -8,28 +10,23 @@ jQuery(document).ready(function($){
         
         });
 
-       /*
-        $("ul#menu-menu-1 li a").click(function(){
-        // alert("Link is working");
-            $("nav").hide();
-        
-        });
-
-        */
-
         $("#close-icon").click(function(){
         
             $("nav").removeClass('responsive');
         
         });
 
+        */
+
 // Toggles nav on and off when icon clicked
 
         $(".button a").click(function(){
         //$(".overlay").fadeToggle(200);
-            $("nav").toggleClass('responsive');
+            $("#topNav").toggleClass('responsive');
             $(this).toggleClass('btn-open').toggleClass('btn-close');
         });
+
+
 
 // set padding-top of first section to clear header  
         

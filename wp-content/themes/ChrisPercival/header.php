@@ -40,15 +40,12 @@
                         <nav id="topNav" class="clearfix">
                             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?>
 
-                            <span id="close-icon" class="hidden">&times;</span>
                         </nav>
                     </div>
                 </div>
 
                 <div style="clear:both; height: 0;">&nbsp;</div>
             </div>
-
-            <span id="menu-icon" class="hidden">&#9776;</span>
 
             <div class="button">
                 <a class="btn-open" href="#"></a>

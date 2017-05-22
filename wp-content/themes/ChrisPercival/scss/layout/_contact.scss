@@ -41,3 +41,29 @@ textarea::-moz-placeholder {@include placeholder}
 textarea:-ms-input-placeholder {@include placeholder}
 textarea:-moz-placeholder {@include placeholder}
 
+@media screen and (max-width: 800px){
+// contact form
+
+section.first {
+    padding: 0 6% 45px 6%;
+}
+
+input.wpcf7-form-control.wpcf7-text {
+    float: none;
+    width: 50%;
+    
+}
+
+input.wpcf7-form-control.wpcf7-text:last-child {
+    margin-right: 0;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    font-size: 25px;
+    @include whiteOnDark;
+    padding: 0 5px;
+}
+
+
+
+} // end media max-width 800px

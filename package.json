@@ -1,0 +1,23 @@
+{
+  "name": "chrispercival",
+  "version": "1.0.0",
+  "description": "> *This is the best website ever seen by human eyes*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomeagle79/eJigsaw_CP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomeagle79/eJigsaw_CP/issues"
+  },
+  "homepage": "https://github.com/tomeagle79/eJigsaw_CP#readme",
+  "keywords": [],
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

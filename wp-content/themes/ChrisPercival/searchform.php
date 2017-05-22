@@ -14,9 +14,10 @@
     class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
     <div>
         <label class="screen-reader-text hidden" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
+        <label class="">Blog Search</label>
         
 		<div class="search">
-			<label class="">Blog Search</label>
+			
   			<span class="fa fa-search"></span>
   			<input placeholder="" type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
 		</div>

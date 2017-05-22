@@ -32,6 +32,7 @@ div.blog-categories, div.blog-recent-posts {
 /* ****************** Search form ************************************ */
 
 form#searchform {
+
 	label {
 		font-family: 'Raleway', sans-serif;
 		color: $font-gray;
@@ -41,7 +42,7 @@ form#searchform {
 
 	input#s {
 		float: right;
-		width: 70%;
+		width: 100%;
 		height: 20px;
 		color: $font-gray;
 		font-size: 13px;
@@ -55,7 +56,7 @@ form#searchform {
   position: relative;
   color: #aaa;
   font-size: 16px;
-  width: 100%;
+  width: 70%;
   float: right;
 }
 
@@ -79,6 +80,18 @@ form#searchform {
   top: 50%;
     transform: translateY(-50%);
     font-size: 10px;
+}
+
+@media (max-width: 568px){
+	div.search {
+		width: 100%;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1068px){
+	div.search {
+		width: 100%;
+	}
 }
 
 
@@ -218,6 +231,21 @@ div.blog-page-right {
 	float: left;
 	padding-left: 0;
 }
+}
+
+@media (max-width: 700px){
+
+	h2.h2-blog, .blog-post-section h1 {
+		margin-top: 10px;
+	}
+
+	.blog-left {
+		width: 100%;
+	}
+
+	.blog-right {
+		width: 100%;
+	}
 }
 
 /********** Next/Previous pagination ***********************/
