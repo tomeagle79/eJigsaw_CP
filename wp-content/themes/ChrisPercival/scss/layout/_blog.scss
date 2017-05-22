@@ -254,29 +254,53 @@ $pag-margin: 20px;
 	width: calc(50% - 10px);
 }
 
+
+// Left pagination
+
 .pag-left {
 	float: left;
-	p{font-size: 12px; vertical-align: middle; float:left;}
-}
+	p {font-size: 12px; vertical-align: middle; float:left; margin: 0}
 
-.pag-right {
-	float: right;
-	p{font-size: 12px; vertical-align: middle; float: right;}
-}
-
-.left {
+	.left {
 	float: left;
-	width: 50%;
+	width: 60%;
 
 	img {float: left}
 }
 
 .right {
 	float: right;
-	width: 50%;
+	width: 40%;
 
 	img {float: right}
+	}
 }
+
+// Right pagination
+
+.pag-right {
+	float: right;
+	p {font-size: 12px; vertical-align: middle; float: right; margin: 0}
+
+	.left {
+	float: left;
+	width: 40%;
+
+	img {float: left}
+}
+
+	.right {
+		float: right;
+		width: 60%;
+
+		img {float: right}
+	}
+}
+
+img.arrow-green {
+	width: 12px;
+}
+
 
 /******** Numeric pagination on blogs page ********************/
 

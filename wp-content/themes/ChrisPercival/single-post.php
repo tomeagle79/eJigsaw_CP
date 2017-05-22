@@ -7,7 +7,7 @@
 	<section class="first clearfix">
 		
 		<div>
-			<h1><?php echo wp_title(''); ?></h1>
+			<h1>Blog</h1>
 		</div>
 
 		<div class="blog-page-right" ?>
