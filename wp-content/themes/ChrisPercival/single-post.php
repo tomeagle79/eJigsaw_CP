@@ -19,11 +19,11 @@
 					<div class="blog-post-section">
 						<h2 class="h2-blog"><?php the_title(); ?></h2>
 						<div class="blog-img-wrapper">
-							<?php the_post_thumbnail(''); ?>
+							<?php // the_post_thumbnail(''); ?>
 						</div>
 						
 						<div style="position: relative">
-							<p style="display: inline-block">DATE <?php the_time('Y'); ?></p>
+							<p style="display: inline-block">DATE <?php the_time('F j, Y'); ?></p>
 							<i id="social-share-icon" class="fa fa-share-alt" style=""></i>
 						</div>
 

@@ -151,6 +151,7 @@ div.blog-post {
 	img {
 		width: 100%;
 		height: auto;
+		margin-bottom: 14px;
 	}
 }
 .blog-left {
@@ -166,11 +167,9 @@ div.blog-post {
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
-				width: inherit !important;
+				}
 			}
-
 		}
-}
 
 .blog-right {
 	width: 60%;
