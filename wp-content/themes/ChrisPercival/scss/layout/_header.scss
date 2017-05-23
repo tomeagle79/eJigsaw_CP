@@ -2,15 +2,15 @@ header {
 	background-color: rgba(255, 255, 255, 0.85) !important;
 	position: fixed;
 	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 1;
-	width: 100%;
-    max-width: 1200px;
-    min-height: 75px;
+	
     // border-bottom: 1px solid black;
 
 // Navigation *******************************************************************
 
-	nav {
+	nav#topNav {
 		div.menu {
 			text-align: right;
 		}
@@ -46,8 +46,6 @@ header {
 	}
 }
 
-
-
 .current_page_item {
 	a {color: #fff !important;}
 	background-color: $dark-blue;
@@ -56,24 +54,28 @@ header {
 
 // Header inner container 
 
-div.header-container {
+div.header-container.main {
 	position: relative;
-	width: 100%;
 }
 
 #logo-container {
 
-		width: 45%;
 		float: left;
-		padding-left: 117px;
-
+		margin-left: -34px;
+		
 	#logo {
 		img {
-			width: 100%;
 			max-width: 420px;
-			height: auto;
+			height: 150px;
 			min-width: 150px;
 		}
+	}
+}
+
+@media (max-width: 568px){
+#logo-container {
+
+		margin-left: -14px;
 	}
 }
 
@@ -88,9 +90,7 @@ div.header-right {
 	right: 0;
 	height: 100%;
 	padding-top: 40px;
-	padding-right: 150px;
 	
-
 	div.menu-menu-1-container {
     text-align: right;
 	}
@@ -120,7 +120,7 @@ ul#header-social {
 .button {
 	display:inline;
 	position:absolute;
-	right:50px;
+	right:0px;
 	top:50%;
 	transform: translateY(-50%);
 	z-index:999;

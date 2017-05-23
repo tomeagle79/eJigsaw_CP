@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
         
    $(window).resize(function () {
             var headerHeight = $('#header').height();
-            $('.first').css('padding-top', headerHeight);
+            $('.first').css('padding-top', headerHeight + 20);
 
             // console.log(headerHeight);
   

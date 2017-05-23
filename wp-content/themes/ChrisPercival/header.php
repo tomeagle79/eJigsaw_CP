@@ -22,13 +22,27 @@
         <!-- Add your site or application content here -->
         
         <header class="" id="header">
-            <div class="header-container">
+            <div class="header-container main">
+                
+
                 <div id="logo-container">
-                    <a id="logo" href=""><img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/logo-full-colour.png" alt="Chris Percival logo"></a>
+                    <!-- a id="logo" href=""><img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/logo-full-colour.png" alt="Chris Percival logo"></a -->
+                    
+                    <picture>
+                      <source media="(min-width: 568px)" srcset="http://localhost/ChrisPercival/wp-content/uploads/2017/05/logo-full-colour.png">
+                      
+
+                      <img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/logo-stacked.png" alt="logo" style="height: 150px; width:auto;">
+                    </picture>
+
                 </div>
                   
                 <div id="header-right-wrapper" class="clearfix">   
-                    <div class="header-right">   
+                   
+                    
+                </div>
+
+                 <div class="header-right">   
                         <ul id="header-social">
                             <li class="header-social-icon"><a href="" target="_blank"><img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/linkedin_blue-icon.png" alt="LinkedIn logo"></a></li>
                             
@@ -41,14 +55,13 @@
                             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?>
 
                         </nav>
+                        
                     </div>
+
+                <div class="button">
+                    <a class="btn-open" href="#"></a>
                 </div>
-
                 <div style="clear:both; height: 0;">&nbsp;</div>
-            </div>
-
-            <div class="button">
-                <a class="btn-open" href="#"></a>
             </div>
 
         </header>

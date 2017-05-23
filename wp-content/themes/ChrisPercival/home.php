@@ -19,7 +19,7 @@ Home page
 			<h1><?php echo wp_title(''); ?></h1>
 		</div>
 
-		<div class="blog-page-right" ?>
+		<div class="blog-page-right">
 
 <?php
 
@@ -62,8 +62,7 @@ $query_args = array(
 <?php if ($the_query->max_num_pages > 1) { ?>
 
 	<nav class="pagination">
-		<h2 class="hidden">This is the paggination</h2>
-		
+				
 		<?php
 			$pag_args =	array(
 					'base'               => '%_%',
