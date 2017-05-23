@@ -1,3 +1,14 @@
+.main-contact {
+padding: 0 12.5%;
+background-color: #fff;
+}
+
+@media (max-width: 480px){
+    .main-contact {
+        padding: 0 30px;
+    }
+}
+
 section.contact-first {
     
     padding: 0 21% 45px 12.5%;

@@ -11,7 +11,7 @@ Template Name: Contacts Page
 <?php get_header(); ?>
 
 
-<div class="main">
+<div class="main-contact">
 	<div id="info">
 	</div>
 	

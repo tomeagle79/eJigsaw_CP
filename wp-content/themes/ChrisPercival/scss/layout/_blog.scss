@@ -146,6 +146,7 @@ div.blog-post {
 	  	font-weight: bold;
 	  	line-height: 1.2;
 	  	border: 0;
+	  	text-transform: none;
 	}
 
 	img {
@@ -160,14 +161,14 @@ div.blog-post {
 	float: left;
 
 		.blog-img-wrapper {
-			position: relative;
-			height: 225px;
-			overflow: hidden;
+			// position: relative;
+			// height: 225px;
+			// overflow: hidden;
 
 			img {
-				position: absolute;
-				left: 50%;
-				transform: translateX(-50%);
+				//position: absolute;
+				//left: 50%;
+				//transform: translateX(-50%);
 				}
 			}
 		}

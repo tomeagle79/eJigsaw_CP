@@ -21,25 +21,19 @@
         <![endif]-->
         <!-- Add your site or application content here -->
         
-        <header class="" id="header">
+        <header class="">
             <div class="header-container main">
-                
-
                 <div id="logo-container">
                     <!-- a id="logo" href=""><img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/logo-full-colour.png" alt="Chris Percival logo"></a -->
                     
                     <picture>
                       <source media="(min-width: 568px)" srcset="http://localhost/ChrisPercival/wp-content/uploads/2017/05/logo-full-colour.png">
-                      
-
                       <img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/logo-stacked.png" alt="logo" style="height: 150px; width:auto;">
                     </picture>
 
                 </div>
                   
                 <div id="header-right-wrapper" class="clearfix">   
-                   
-                    
                 </div>
 
                  <div class="header-right">   

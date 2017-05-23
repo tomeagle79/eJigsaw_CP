@@ -54,8 +54,11 @@ header {
 
 // Header inner container 
 
-div.header-container.main {
+div.header-container {
 	position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #logo-container {

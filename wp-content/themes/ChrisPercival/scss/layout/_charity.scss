@@ -1,5 +1,12 @@
-section.charity-first {
-    padding: 0 12.5%;
+.main-charity {
+padding: 0 12.5%;
+background-color: #fff;
+}
+
+@media (max-width: 480px){
+	.main-charity {
+		padding: 0 30px;
+	}
 }
 
 p.p-charity {

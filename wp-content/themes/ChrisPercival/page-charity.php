@@ -11,7 +11,7 @@ Template Name: Charity Page
 <?php get_header(); ?>
 
 
-<div class="main clearfix">
+<div class="main-charity clearfix">
 	<div id="info">
 	</div>
 	
@@ -27,10 +27,6 @@ Template Name: Charity Page
 		<?php endif; ?>
 		
 	</section>
-
-	
-
-
 </div>
 
 
