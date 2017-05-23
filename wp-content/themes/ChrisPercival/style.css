@@ -14,8 +14,8 @@ header {
   background-color: rgba(255, 255, 255, 0.85) !important;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  max-width: 1200px;
   z-index: 1;
 }
 
@@ -74,17 +74,15 @@ header nav#topNav ul li:last-child {
 div.header-container {
   position: relative;
   max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
 }
 
-/* line 64, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 62, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 #logo-container {
   float: left;
   margin-left: -34px;
 }
 
-/* line 70, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 68, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 #logo-container #logo img {
   max-width: 420px;
   height: 150px;
@@ -92,19 +90,19 @@ div.header-container {
 }
 
 @media (max-width: 568px) {
-  /* line 79, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 77, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   #logo-container {
     margin-left: -14px;
   }
 }
 
-/* line 85, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 83, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 div#header-right-wrapper {
   width: 55%;
   float: right;
 }
 
-/* line 91, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 89, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 div.header-right {
   position: absolute;
   right: 0;
@@ -112,35 +110,35 @@ div.header-right {
   padding-top: 40px;
 }
 
-/* line 97, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 95, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 div.header-right div.menu-menu-1-container {
   text-align: right;
 }
 
-/* line 101, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 99, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 div.header-right ul#header-social {
   text-align: right;
   float: none;
 }
 
-/* line 105, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 103, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 div.header-right ul#header-social .header-social-icon {
   color: #4296B4;
 }
 
-/* line 108, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 106, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 div.header-right ul#header-social .header-social-icon img {
   width: 35px;
   margin-left: 5px;
   transition: 0.3s;
 }
 
-/* line 114, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 112, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 div.header-right ul#header-social .header-social-icon img:hover {
   transform: rotate(7deg);
 }
 
-/* line 123, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 121, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 .button {
   display: inline;
   position: absolute;
@@ -151,7 +149,7 @@ div.header-right ul#header-social .header-social-icon img:hover {
   font-size: 30px;
 }
 
-/* line 133, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 131, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 .btn-open:after {
   color: #4296B4;
   content: "\f0c9";
@@ -162,12 +160,12 @@ div.header-right ul#header-social .header-social-icon img:hover {
   -o-transition: all .2s linear 0s;
 }
 
-/* line 143, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 141, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 .btn-open:hover:after {
   color: #34B484;
 }
 
-/* line 147, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+/* line 145, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
 .btn-close:after {
   color: #fff;
   content: "\f00d";
@@ -179,7 +177,7 @@ div.header-right ul#header-social .header-social-icon img:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 164, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 162, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   nav.responsive {
     position: fixed;
     top: 0;
@@ -192,44 +190,44 @@ div.header-right ul#header-social .header-social-icon img:hover {
     height: 100vh;
     background-color: #4296B4;
   }
-  /* line 177, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 175, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   #logo-container {
     padding-left: 0;
   }
-  /* line 181, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 179, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   ul#header-social, nav {
     display: none;
   }
-  /* line 185, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 183, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   div.menu-menu-1-container {
     height: 100%;
     width: 100%;
   }
-  /* line 190, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 188, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   ul#menu-menu-1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  /* line 196, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 194, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   ul#menu-menu-1 li {
     display: block;
     padding: 10px !important;
     text-align: center !important;
   }
-  /* line 201, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 199, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   ul#menu-menu-1 li:last-child {
     margin-right: 0 !important;
   }
-  /* line 205, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 203, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   ul#menu-menu-1 li a {
     color: #fff !important;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 214, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
+  /* line 212, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_header.scss */
   .button {
     display: none;
   }

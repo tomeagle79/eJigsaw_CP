@@ -26,12 +26,10 @@ jQuery(document).ready(function($){
             $(this).toggleClass('btn-open').toggleClass('btn-close');
         });
 
-
-
 // set padding-top of first section to clear header  
         
    $(window).resize(function () {
-            var headerHeight = $('#header').height();
+            var headerHeight = $('header').height();
             $('.first').css('padding-top', headerHeight + 20);
 
             // console.log(headerHeight);
