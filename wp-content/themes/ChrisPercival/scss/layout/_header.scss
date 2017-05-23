@@ -193,14 +193,14 @@ ul#header-social {
 		li {
 			display: block;
 			padding: 10px !important;
-			text-align: center;
+			text-align: center !important;
 			
 			&:last-child {
-				margin-right: inherit;
+				margin-right: 0 !important;
 			}
 
 			a {
-				color: #fff;
+				color: #fff !important;
 			}
 		}
 
