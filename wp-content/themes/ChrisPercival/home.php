@@ -42,7 +42,7 @@ $query_args = array(
 		
 		<div class="blog-left blog-post-section">
 			<div class="blog-img-wrapper clearfix">
-				<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail(''); ?></a>
+				<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail(array(150,150)); ?></a>
 			</div>	
 		</div>
 
