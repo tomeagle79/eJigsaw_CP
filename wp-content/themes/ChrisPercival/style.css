@@ -824,6 +824,7 @@ img.attachment-full.size-full.wp-post-image {
   vertical-align: middle;
   float: left;
   margin: 0;
+  text-align: right;
 }
 
 /* line 264, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_blog.scss */
