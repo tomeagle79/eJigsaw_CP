@@ -362,23 +362,11 @@ input.wpcf7-form-control.wpcf7-text {
 }
 
 /* line 35, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
-input.wpcf7-form-control.wpcf7-text:last-child {
+input#last-text-input {
   margin-right: 0;
 }
 
-/* line 39, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
-input.wpcf7-form-control.wpcf7-submit {
-  font-size: 25px;
-  font-weight: 100;
-  font-family: 'Anton', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
-  background-color: #4296B4;
-  padding: 0 5px;
-}
-
-/* line 45, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+/* line 40, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
 input::-webkit-input-placeholder {
   color: #aaaaaa;
   text-transform: uppercase;
@@ -386,7 +374,7 @@ input::-webkit-input-placeholder {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 46, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+/* line 41, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
 input::-moz-placeholder {
   color: #aaaaaa;
   text-transform: uppercase;
@@ -394,7 +382,7 @@ input::-moz-placeholder {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 47, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+/* line 42, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
 input:-ms-input-placeholder {
   color: #aaaaaa;
   text-transform: uppercase;
@@ -402,7 +390,7 @@ input:-ms-input-placeholder {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 48, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+/* line 43, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
 input:-moz-placeholder {
   color: #aaaaaa;
   text-transform: uppercase;
@@ -410,7 +398,7 @@ input:-moz-placeholder {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 50, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+/* line 45, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
 textarea::-webkit-input-placeholder {
   color: #aaaaaa;
   text-transform: uppercase;
@@ -418,7 +406,7 @@ textarea::-webkit-input-placeholder {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 51, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+/* line 46, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
 textarea::-moz-placeholder {
   color: #aaaaaa;
   text-transform: uppercase;
@@ -426,7 +414,7 @@ textarea::-moz-placeholder {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 52, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+/* line 47, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
 textarea:-ms-input-placeholder {
   color: #aaaaaa;
   text-transform: uppercase;
@@ -434,7 +422,7 @@ textarea:-ms-input-placeholder {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 53, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+/* line 48, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
 textarea:-moz-placeholder {
   color: #aaaaaa;
   text-transform: uppercase;
@@ -443,20 +431,20 @@ textarea:-moz-placeholder {
 }
 
 @media screen and (max-width: 800px) {
-  /* line 58, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+  /* line 53, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
   section.contact-first {
     padding: 0 6% 45px 6%;
   }
-  /* line 62, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+  /* line 57, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
   input.wpcf7-form-control.wpcf7-text {
     float: none;
     width: 50%;
   }
-  /* line 68, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+  /* line 63, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
   input.wpcf7-form-control.wpcf7-text:last-child {
     margin-right: 0;
   }
-  /* line 72, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
+  /* line 67, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_contact.scss */
   input.wpcf7-form-control.wpcf7-submit {
     font-size: 25px;
     font-weight: 100;

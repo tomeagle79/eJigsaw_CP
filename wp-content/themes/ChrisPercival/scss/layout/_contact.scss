@@ -32,15 +32,10 @@ input.wpcf7-form-control.wpcf7-text {
     box-sizing: border-box;
 }
 
-input.wpcf7-form-control.wpcf7-text:last-child {
+input#last-text-input {
     margin-right: 0;
 }
 
-input.wpcf7-form-control.wpcf7-submit {
-    font-size: 25px;
-	@include whiteOnDark;
-	padding: 0 5px;
-}
 
 input::-webkit-input-placeholder {@include placeholder}
 input::-moz-placeholder {@include placeholder}
