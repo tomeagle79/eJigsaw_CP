@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 
 
@@ -20,22 +21,22 @@
 	<section id="social">
 		<ul id="social-cards">
 			<li class="social">
-				<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/speech_icon.png" alt="Quotes">
+				<img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/speech_icon.png" alt="Quotes">
 				<h3>LATEST BLOG</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-				<img class="ellipse" src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/ellipse.png">
+				<img class="ellipse" src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/ellipse.png">
 			</li>
 			<li class="social">
-				<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/twitter_blue-icon.png" alt="Twitter icon">
+				<img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/twitter_blue-icon.png" alt="Twitter icon">
 				<h3>TWITTER FEED</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-				<img class="ellipse" src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/ellipse.png">
+				<img class="ellipse" src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/ellipse.png">
 			</li>
 			<li class="social">
-				<img src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/graph_icon.png" alt="Arrow logo">
+				<img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/graph_icon.png" alt="Arrow logo">
 				<h3>TOP 100</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-				<img class="ellipse" src="http://localhost/ChrisPercival/wp-content/uploads/2017/05/ellipse.png">
+				<img class="ellipse" src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/ellipse.png">
 			</li>
 
 		</ul>
