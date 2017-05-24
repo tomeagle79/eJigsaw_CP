@@ -272,7 +272,7 @@ div.navigation {
 
 	.left {
 	float: left;
-	width: 60%;
+	width: 50%;
 
 	img {float: left}
 }
@@ -307,9 +307,9 @@ div.navigation {
 
 	.right {
 		float: right;
-		width: 60%;
-
-		img {float: right}
+		width: 50%;
+		
+		p {text-align: right;}
 	}
 }
 
