@@ -1,6 +1,6 @@
-      <!doctype html>
-<html class="no-js" lang="">
-    <head>
+<!doctype html>
+    <html class="no-js" lang="">
+        <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
@@ -14,8 +14,8 @@
         
         <?php wp_head(); ?>
         
-    </head>
-    <body>
+        </head>
+        <body>
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -25,10 +25,10 @@
             <div class="header-container main">
                 <div id="logo-container">
                                       
-                    <picture>
+                    <a href="<?php echo home_url(); ?>"><picture>
                       <source media="(min-width: 568px)" srcset="<?php bloginfo( 'template_url' ); ?>/img/logo-full-colour.png">
                       <img src="<?php bloginfo( 'template_url' ); ?>/img/logo-stacked.png" alt="logo" style="height: 150px; width:auto;">
-                    </picture>
+                    </picture></a>
 
                 </div>
 

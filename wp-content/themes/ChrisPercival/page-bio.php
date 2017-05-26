@@ -15,7 +15,7 @@ Template Name: Bio Page
 	<div id="info">
 	</div>
 	
-	<section class="first">
+	<!-- <section class="first">
 		<h1><?php the_title() ?></h1>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -26,11 +26,15 @@ Template Name: Bio Page
 				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
 		
+	</section> -->
+
+	<section class="first">
+		<h1><?php the_title() ?></h1>
+				
 	</section>
-
-	
-
-
+</div>
+<div class="bio-timeline">
+	<a href="<?php echo bloginfo( 'template_url' ); ?>/img/chris-timeline.pdf"><img src="<?php echo bloginfo( 'template_url' ); ?>/img/chris-timeline.png" alt="Chris timeline" /></a>
 </div>
 
 

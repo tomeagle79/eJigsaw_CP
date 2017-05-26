@@ -45,7 +45,7 @@
 				<img class="ellipse" src="<?php bloginfo( 'template_url'); ?>/img/ellipse.png">
 			</li>
 			<li class="social">
-				<img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/twitter_blue-icon.png" alt="Twitter icon">
+				<img src="<?php bloginfo( 'template_url'); ?>/img/twitter_blue-icon.png" alt="Twitter icon">
 				<h3>TWITTER FEED</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
 				<img class="ellipse" src="<?php bloginfo( 'template_url'); ?>/img/ellipse.png">
