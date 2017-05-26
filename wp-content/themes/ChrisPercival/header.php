@@ -24,11 +24,11 @@
         <header class="">
             <div class="header-container main">
                 <div id="logo-container">
-                    <!-- a id="logo" href=""><img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/logo-full-colour.png" alt="Chris Percival logo"></a -->
+                    <!-- a id="logo" href=""><img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/logo-full-colour.png" alt="Chris Percival logo"></a -->
                     
                     <picture>
-                      <source media="(min-width: 568px)" srcset="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/logo-full-colour.png">
-                      <img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/logo-stacked.png" alt="logo" style="height: 150px; width:auto;">
+                      <source media="(min-width: 568px)" srcset="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/logo-full-colour.png">
+                      <img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/logo-stacked.png" alt="logo" style="height: 150px; width:auto;">
                     </picture>
 
                 </div>
@@ -38,11 +38,11 @@
 
                  <div class="header-right">   
                         <ul id="header-social">
-                            <li class="header-social-icon"><a href="" target="_blank"><img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/linkedin_blue-icon.png" alt="LinkedIn logo"></a></li>
+                            <li class="header-social-icon"><a href="" target="_blank"><img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/linkedin_blue-icon.png" alt="LinkedIn logo"></a></li>
                             
-                            <li class="header-social-icon"><a href="" target="_blank"><img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/twitter_blue-icon.png" alt="Twitter logo"></a></li>
+                            <li class="header-social-icon"><a href="" target="_blank"><img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/twitter_blue-icon.png" alt="Twitter logo"></a></li>
                             
-                            <li class="header-social-icon"><a href="" target="_blank"><img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/google_blue-icon.png" alt="Google plus logo"></a></li>
+                            <li class="header-social-icon"><a href="" target="_blank"><img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/google_blue-icon.png" alt="Google plus logo"></a></li>
                         </ul>  
                         
                         <nav id="topNav" class="clearfix">

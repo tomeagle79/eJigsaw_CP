@@ -53,7 +53,7 @@ $query_args = array(
 			<hr>
 			<p>DATE <?php the_time('Y'); ?></p>
 			<p><?php the_excerpt(); ?></p>
-			<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
+			<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
 			
 		</div>
 	</div>
@@ -89,8 +89,8 @@ $query_args = array(
 		<br />
 		<p ><?php echo paginate_links( array(
 
-			  'prev_text' => '<img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-left.png" alt="previous" />',
-			  'next_text' => '<img src="http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-right.png" alt="next" />',
+			  'prev_text' => '<img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/charity-arrow-left.png" alt="previous" />',
+			  'next_text' => '<img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/charity-arrow-right.png" alt="next" />',
 			  'before_page_number' => '',
 					'after_page_number'  => ''
 
