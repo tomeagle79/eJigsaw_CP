@@ -29,5 +29,12 @@ Template Name: Charity Page
 	</section>
 </div>
 
+<!-- <div class="main-charity clearfix">
+	<section class="first">
+		
+				
+	</section>
+</div> -->
+
 
 <?php get_footer(); ?>

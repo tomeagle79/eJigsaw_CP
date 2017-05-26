@@ -35,6 +35,14 @@ input#last-text-input {
     margin-right: 0;
 }
 
+input.wpcf7-form-control.wpcf7-submit {
+    font-size: 25px;
+    @include whiteOnDark;
+    padding: 0 5px;
+        &:hover {
+            opacity: 0.75;
+        }
+}
 
 input::-webkit-input-placeholder {@include placeholder}
 input::-moz-placeholder {@include placeholder}
@@ -62,13 +70,5 @@ input.wpcf7-form-control.wpcf7-text {
 input.wpcf7-form-control.wpcf7-text:last-child {
     margin-right: 0;
 }
-
-input.wpcf7-form-control.wpcf7-submit {
-    font-size: 25px;
-    @include whiteOnDark;
-    padding: 0 5px;
-}
-
-
 
 } // end media max-width 800px

@@ -6,8 +6,9 @@
 
 	<!-- <section id="slider-container" class="clearfix" style=""> -->
 		
-		<?php echo do_shortcode('[gallery slick_active="true" link="none" size="full" sl_dots="true" sl_accessibility="false" sl_arrows="false" ids="49,58,59"]');
+		<?php echo do_shortcode('[gallery slick_active="true" link="none" size="full" sl_dots="true" sl_accessibility="false" sl_arrows="false" ids="1660,1661,1662,59"]');
 		?>
+
 
 			<section id="social">
 				<ul id="social-cards">
@@ -31,7 +32,7 @@
 				</ul>
 			</section>
 
-			<div id="slider-jigsaw"><?php echo do_shortcode('[gallery slick_active="true" link="none" size="full" ids="71,70,69"]')?></div>
+			<div id="slider-jigsaw"><?php echo do_shortcode('[gallery slick_active="true" sl_arrows="true" link="none" size="full" ids="71,70,69"]')?></div>
 
 	<!-- </section> -->
 

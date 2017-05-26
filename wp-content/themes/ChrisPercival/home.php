@@ -51,7 +51,7 @@ $query_args = array(
 		<div class="blog-right blog-post-section">
 			<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
 			<hr>
-			<p>DATE <?php the_time('Y'); ?></p>
+			<p><?php the_time('F j, Y'); ?></p>
 			<p><?php the_excerpt(); ?></p>
 			<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
 			

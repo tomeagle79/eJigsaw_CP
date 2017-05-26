@@ -127,6 +127,10 @@ div.blog-post {
 			padding: 5px;
 			float: right;
 
+				&:hover {
+					opacity: 0.75;
+				}
+
 				img {
 					width: 16px;
     				margin-left: 10px;
@@ -153,6 +157,10 @@ div.blog-post {
 		width: 100%;
 		height: auto;
 		margin-bottom: 0px;
+	}
+
+	a {
+		color: inherit; 
 	}
 }
 
@@ -263,7 +271,7 @@ div.navigation {
 // Left pagination
 
 .blog-border-box.clearfix.pag.pag-left {
-    background-image: url(http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-left.png);
+    background-image: url('http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/charity-arrow-left.png');
     background-repeat: no-repeat;
     background-position: 5% 86%;
 
@@ -291,7 +299,7 @@ div.navigation {
 
 .blog-border-box.clearfix.pag.pag-right {
 
-	background-image: url(http://dev.ejigsaw.co.uk/ChrisPercival/wp-content/uploads/2017/05/charity-arrow-right.png);
+	background-image: url('http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/charity-arrow-right.png');
     background-repeat: no-repeat;
     background-position: 95% 86%;
 

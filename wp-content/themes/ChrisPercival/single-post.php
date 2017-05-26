@@ -23,7 +23,7 @@
 						</div>
 						
 						<div style="position: relative">
-							<p style="display: inline-block">DATE <?php the_time('F j, Y'); ?></p>
+							<p style="display: inline-block"><?php the_time('F j, Y'); ?></p>
 							<i id="social-share-icon" class="fa fa-share-alt" style=""></i>
 						</div>
 
