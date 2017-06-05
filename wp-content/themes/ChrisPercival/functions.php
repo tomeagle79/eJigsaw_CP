@@ -5,6 +5,9 @@ function wpt_theme_styles() {
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/main.css' );
 	wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.css' );
 	wp_enqueue_style( 'font_awesome_css', get_template_directory_uri() . '/css/font-awesome.css' );
+	wp_enqueue_style( 'slick_css', get_template_directory_uri() . '/css/slick.css' );
+	wp_enqueue_style( 'slick_theme_css', get_template_directory_uri() . '/css/slick-theme.css' );
+
 	wp_enqueue_style( 'style_css', get_template_directory_uri() . '/style.css' );
 	
 	wp_enqueue_style( 'Anton', "https://fonts.googleapis.com/css?family=Anton" );
@@ -30,6 +33,9 @@ function wpt_theme_js() {
 	wp_enqueue_script( 'foundation_js', get_template_directory_uri() . '/js/foundation.min.js', array('jquery'), '', true );
 	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', array('jquery', 'foundation_js'), '', true);
 	wp_enqueue_script( 'jquery-ui', "http://code.jquery.com/ui/1.9.2/jquery-ui.js", array('jquery'), '', true );
+	wp_enqueue_script( 'slick_js', get_template_directory_uri() . '/js/slick.js', array('jquery'), '', true );
+	wp_enqueue_script( 'slick_min_js', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'slick_initiator', get_template_directory_uri() . '/js/slick-initiator.js', array('jquery'), '', true );
 	wp_enqueue_script( 'scripts_js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '', true);
 }
 
