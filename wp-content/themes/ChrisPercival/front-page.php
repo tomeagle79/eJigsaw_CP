@@ -22,10 +22,27 @@
 			<section id="social">
 				<ul id="social-cards">
 				 	<li class="social">
-				 		<img src="<?php bloginfo( 'template_url'); ?>/img/speech_icon.png" alt="Quotes" />
+				 		<img src="<?php bloginfo( 'template_url' ); ?>/img/speech_icon.png" alt="Quotes" />
 						<h3>LATEST BLOG</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-						<img class="ellipse" src="<?php bloginfo( 'template_url'); ?>/img/ellipse.png" alt="ellipse"/>
+						
+						<?php
+							$args = array( 'numberposts' => '1' );
+							$recent_posts = wp_get_recent_posts( $args );
+							foreach( $recent_posts as $recent ){
+								echo '<p><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p> ';
+
+								echo 	'<a href="' 
+										. get_permalink($recent["ID"]) 
+										. '">' 
+										. '<img class="ellipse" src="' 
+										. get_bloginfo( 'template_url' ) 
+										. '/img/ellipse.png" alt="ellipse"/></a>';
+
+											}
+										wp_reset_query();
+						?>
+						
+						
 					</li>
 				 	<li class="social">
 				 		<img src="<?php bloginfo( 'template_url'); ?>/img/twitter_blue-icon.png" alt="Twitter icon" />

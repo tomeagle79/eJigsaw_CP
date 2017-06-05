@@ -200,48 +200,50 @@ section#social {
 	padding: 65px 0;
 	background-color: #fff;
 
-	ul#social-cards {
-		width: 100%;
-		display: block;
-		text-align: center;
-	li {
-		width: 25%;
-		display: inline-block;
-		text-align: center;
-		color: $dark-blue;
+		ul#social-cards {
+			width: 100%;
+			display: block;
+			text-align: center;
+		li {
+			width: 25%;
+			display: inline-block;
+			text-align: center;
+			color: $dark-blue;
 
-		img {
-			width: 100px;
-			
-			&.ellipse {
-			    width: 50px !important;
+			a {
+				color: $dark-blue;
+			}
+
+			img {
+				width: 100px;
+				
+				&.ellipse {
+				    width: 50px !important;
+				}
+			}		
+
+			h3 {
+				font-size: 24px;
+				font-family: 'Anton', sans-serif;
+				font-weight: 100 !important;
+				letter-spacing: 2px;
+			}
+
+			p {
+				    width: 76%;
+				    max-width: 190px;
+				    font-family: 'Raleway', Helvetica;
+				    font-size: 19px;
+				    line-height: 1.2;
+				    text-align: center;
+				    margin: 0 auto;
+			}
+
+			p.ellipse {
+				font-size: 30px;
 			}
 		}
-
-		
-
-		h3 {
-			font-size: 24px;
-			font-family: 'Anton', sans-serif;
-			font-weight: 100 !important;
-			letter-spacing: 2px;
-		}
-
-		p {
-			    width: 76%;
-			    max-width: 190px;
-			    font-family: 'Raleway', Helvetica;
-			    font-size: 19px;
-			    line-height: 1.2;
-			    text-align: center;
-			    margin: 0 auto;
-		}
-
-		p.ellipse {
-			font-size: 30px;
-		}
 	}
-}
 }
 
 section#bottom-slider-container {

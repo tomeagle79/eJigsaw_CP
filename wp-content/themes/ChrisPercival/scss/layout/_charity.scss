@@ -25,18 +25,19 @@ div#slick-slider-charity {
 
 // The following vertically aligns the individual slides
 
-	.slide.slick-slide {
+	.slick-slide {
 	    float: none;
 	    display: inline-block !important;
 	    vertical-align: middle;
-	}
+	    padding: 0 1%;
+	 }
 
-	.slide__inner {
-	    padding: 0 17%;
+	button {
+		z-index: 10;
 	}
 
 	button.slick-prev.slick-arrow {
-	    background-image: url('http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/charity-arrow-left.png');
+   	    background-image: url('http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/charity-arrow-left.png');
 	    background-repeat: no-repeat;
 	    width: 20px;
 	    height: 25px;
@@ -48,7 +49,7 @@ div#slick-slider-charity {
 	}
 
 	button.slick-next.slick-arrow {
-	    background-image: url('http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/charity-arrow-right.png');
+	    background-image: url('http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/charity-arrow-right.png');
 	    background-repeat: no-repeat;
 	    width: 20px;
 	    height: 25px;
@@ -59,7 +60,7 @@ div#slick-slider-charity {
 	    content: '' !important;
 	}
 
-}
+} // end of slick-slider-charity
 
 
 // Removes gap below sliders 
