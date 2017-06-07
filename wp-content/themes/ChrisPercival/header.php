@@ -37,10 +37,10 @@
 
                  <div class="header-right">   
                         <ul id="header-social">
-                            <li class="header-social-icon"><a href="" target="_blank">
+                            <li class="header-social-icon"><a href="https://www.linkedin.com/in/chris-percival-19189814/" target="_blank">
                             <img src="<?php bloginfo( 'template_url'); ?>/img/linkedin_blue-icon.png" alt="LinkedIn logo"></a></li>
                             
-                            <li class="header-social-icon"><a href="" target="_blank"><img src="<?php bloginfo( 'template_url'); ?>/img/twitter_blue-icon.png" alt="Twitter logo"></a></li>
+                            <li class="header-social-icon"><a href="https://twitter.com/ChrisPercival_" target="_blank"><img src="<?php bloginfo( 'template_url'); ?>/img/twitter_blue-icon.png" alt="Twitter logo"></a></li>
                             
                         </ul>  
                         

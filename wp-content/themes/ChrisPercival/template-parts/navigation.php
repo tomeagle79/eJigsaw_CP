@@ -11,7 +11,7 @@
 
 				<?php previous_post_link('%link',"$prevthumbnail", TRUE); ?>
 			</div>
-		</div>
+ 		</div>
 
 
 	<?php } $nextPost = get_next_post(true);	if($nextPost) { ?>

@@ -7,7 +7,7 @@
 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
 <!-- Display the Post Title with Hyperlink -->
-<li><a href="<?php the_permalink() ?>"><?php the_title(); ?><span>&nbsp;DATE&nbsp;</span><?php the_time('Y'); ?></a></li>
+<li><a href="<?php the_permalink() ?>"><?php the_title(); ?>&nbsp;<span class="time recent-time"><?php the_time('F j, Y'); ?></a></li>
 
 <!-- Display the Post Excerpt -->
 <!-- <li><?php the_excerpt(__('(more…)')); ?></li> -->

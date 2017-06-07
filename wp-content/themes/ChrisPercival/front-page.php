@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
 
 
@@ -9,7 +8,6 @@
 				</div>
 				<div class="mySlickSlide">
 					<img src="<?php bloginfo( 'template_url'); ?>/img/slider_images/header1.jpg" alt="slick-pic">
-					
 				</div>
 				<div class="mySlickSlide">
 					<img src="<?php bloginfo( 'template_url'); ?>/img/slider_images/header2.jpg" alt="slick-pic">
@@ -40,20 +38,31 @@
 
 											}
 										wp_reset_query();
-						?>
-						
-						
+						?>						
 					</li>
 				 	<li class="social">
 				 		<img src="<?php bloginfo( 'template_url'); ?>/img/twitter_blue-icon.png" alt="Twitter icon" />
 						<h3>TWITTER FEED</h3>
+
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+
+						
 						<img class="ellipse" src="<?php bloginfo( 'template_url'); ?>/img/ellipse.png" alt="ellipse"/></li>
 				 	<li class="social">
 				 		<img src="<?php bloginfo( 'template_url'); ?>/img/graph_icon.png" alt="Arrow logo" />
 						<h3>TOP 100</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-						<img class="ellipse" src="<?php bloginfo( 'template_url'); ?>/img/ellipse.png" alt="ellipse"/>
+
+						<?php
+							$post_id = 5703;
+							$queried_post = get_post($post_id);
+							$title = $queried_post->post_title;
+							echo '<p><a href="">' . $title . '</a></p>';
+							// echo $queried_post->post_content;
+						?>
+
+						<a href="<?php the_permalink($post_id); ?>"><img class="ellipse" src="<?php bloginfo( 'template_url'); ?>/img/ellipse.png" alt="ellipse"/></a>
+						
 					</li>
 				</ul>
 			</section>

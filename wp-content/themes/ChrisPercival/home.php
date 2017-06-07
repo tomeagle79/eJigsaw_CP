@@ -34,10 +34,9 @@ Home page
 				<div class="blog-right blog-post-section">
 					<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
 					<hr>
-					<p><?php the_time('F j, Y'); ?></p>
+					<p class="p-time"><span class="time"><?php the_time('F j, Y'); ?></span></p>
 					<p><?php the_excerpt(); ?></p>
-					<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/arrow-right-white.png"></button></a>
-					
+					<a href="<?php the_permalink(); ?>" ><button class="button-blog">Read More<img src="<?php bloginfo( 'template_url'); ?>/img/arrow-right-white.png"></button></a>
 				</div>
 			</div>
 			<?php endwhile; ?>
@@ -68,10 +67,16 @@ Home page
 				
 				<br />
 				<p ><?php echo paginate_links( array(
-						'prev_text' => '<img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/charity-arrow-left.png" alt="previous" />',
-						'next_text' => '<img src="http://dev.ejigsaw.co.uk/chrispercival/wp-content/uploads/2017/05/charity-arrow-right.png" alt="next" />',
+						'prev_text' => 
+
+						'<img src="' . get_bloginfo('template_url') . '/img/charity-arrow-left.png" alt="previous" />',
+						
+						'next_text' => 
+
+						'<img src="' . get_bloginfo('template_url') . '/img/charity-arrow-right.png" alt="next" />',
+
 						'before_page_number' => '',
-								'after_page_number'  => ''
+						'after_page_number'  => ''
 				) ); ?></p>
 				<br />
 			</nav>
@@ -84,15 +89,17 @@ Home page
 			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 			<?php endif; ?>
 			</div> <!-- end of blog page right section -->
+			
+
 			<div class="blog-page-sidebar">
 				<div class="blog-recent-posts blog-border-box">
 					<h2>RECENT POSTS</h2>
 					<!-- template part for recent posts listing -->
 					<?php get_template_part('template-parts/recent', 'posts') ?>
 				</div>
-				<div class="blog-categories blog-border-box">
+				<div class="blog-categories blog-border-box clearfix">
 					<h2>CATEGORIES</h2>
-				<ul><?php wp_list_categories('title_li='); ?></ul>
+				<ul class="double"><?php wp_list_categories('title_li='); ?></ul>
 			</div>
 			<div class="blog-search blog-border-box clearfix">
 				<?php get_search_form(); ?>
