@@ -305,9 +305,14 @@ div.blog-page-right {
 /********** Next/Previous pagination ***********************/
 $pag-margin: 20px;
 
-.pag {
-	width: calc(50% - 10px);
+.blog-border-box.clearfix.pag {
+    margin: 20px 0;
+    width: calc(50% - 10px);
 	a {color: $font-gray;}
+}
+
+.pag {
+	
 }
 
 div.navigation {

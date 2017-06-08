@@ -7,8 +7,10 @@ jQuery(document).ready(function($){
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 1000,
+        // cssEase: swing,
     });
 
     $('.bizSlick').slick({
@@ -16,8 +18,9 @@ jQuery(document).ready(function($){
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 1000,
     });
 
     $('.charSlick').slick({
@@ -26,7 +29,8 @@ jQuery(document).ready(function($){
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
+        speed: 1000,
          responsive: [
                 {
                   breakpoint: 1024,
