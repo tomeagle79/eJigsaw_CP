@@ -4,9 +4,7 @@
         				<img id="footer-logo" src="<?php bloginfo( 'template_url'); ?>/img/logo-white.png" alt="Chris Percival logo">
         			</div>
         			<div class="footer-section footer-desktop">
-        				<a href="http://dev.ejigsaw.co.uk/chrispercival/contact/">
-                            <button id="button-contact">CONTACT</button>
-                        </a>
+        				<button id="button-contact"><a href="mailto:">CONTACT</a></button>
         			</div>
         			<div class="footer-section footer-desktop">
         				
@@ -27,9 +25,7 @@
  <!--   mobile version of footer -->              		
             
                     <div class="footer-section footer-mobile">
-                        <a href="http://dev.ejigsaw.co.uk/chrispercival/contact/">
-                            <button id="button-contact">CONTACT</button>
-                        </a>
+                       <button id="button-contact"><a href="mailto:">CONTACT</a></button>
                     </div>
 
                     <div class="footer-section footer-mobile">

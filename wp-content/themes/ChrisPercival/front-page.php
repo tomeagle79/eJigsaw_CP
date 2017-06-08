@@ -64,7 +64,7 @@
 								$post_id = 5703;
 								$queried_post = get_post($post_id);
 								$title = $queried_post->post_title;
-								echo '<p><a href="">' . $title . '</a></p>';
+								echo '<p><a href="' . get_permalink($post_id) . '">' . $title . '</a></p>';
 								// echo $queried_post->post_content;
 							?>
 						</div>

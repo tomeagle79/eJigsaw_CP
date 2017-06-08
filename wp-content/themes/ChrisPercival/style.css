@@ -568,7 +568,7 @@ div#slick-slider-charity button {
 
 /* line 39, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_charity.scss */
 div#slick-slider-charity button.slick-prev.slick-arrow {
-  background-image: url("http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/charity-arrow-left.png");
+  background-image: url("../ChrisPercival/img/charity-arrow-left.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 25px;
@@ -582,7 +582,7 @@ div#slick-slider-charity .slick-prev:before {
 
 /* line 51, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_charity.scss */
 div#slick-slider-charity button.slick-next.slick-arrow {
-  background-image: url("http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/charity-arrow-right.png");
+  background-image: url("../ChrisPercival/img/charity-arrow-right.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 25px;
@@ -1251,7 +1251,7 @@ div#slider-jigsaw button {
 
 /* line 88, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_slick.scss */
 div#slider-jigsaw button.slick-prev.slick-arrow {
-  background-image: url("http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/leftJigsaw.png");
+  background-image: url("../ChrisPercival/img/leftJigsaw.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 25px;
@@ -1265,7 +1265,7 @@ div#slider-jigsaw .slick-prev:before {
 
 /* line 100, C:/xampp/htdocs/ChrisPercival/wp-content/themes/ChrisPercival/scss/layout/_slick.scss */
 div#slider-jigsaw button.slick-next.slick-arrow {
-  background-image: url("http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/rightJigsaw.png");
+  background-image: url("../ChrisPercival/img/rightJigsaw.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 25px;

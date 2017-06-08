@@ -86,7 +86,7 @@ div#slider-jigsaw {
 	button {z-index: 1}
 
 	button.slick-prev.slick-arrow {
-	    background-image: url('http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/leftJigsaw.png');
+	    background-image: url('../ChrisPercival/img/leftJigsaw.png');
 	    background-repeat: no-repeat;
 	    width: 20px;
 	    height: 25px;
@@ -98,8 +98,8 @@ div#slider-jigsaw {
 	}
 
 	button.slick-next.slick-arrow {
-	    background-image: url('http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/rightJigsaw.png');
-	    background-repeat: no-repeat;
+	    background-image: url('../ChrisPercival/img/rightJigsaw.png');
+		background-repeat: no-repeat;
 	    width: 20px;
 	    height: 25px;
 	    right: 50px !important;

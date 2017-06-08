@@ -37,7 +37,7 @@ div#slick-slider-charity {
 	}
 
 	button.slick-prev.slick-arrow {
-   	    background-image: url('http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/charity-arrow-left.png');
+	    background-image: url('../ChrisPercival/img/charity-arrow-left.png');
 	    background-repeat: no-repeat;
 	    width: 20px;
 	    height: 25px;
@@ -49,8 +49,8 @@ div#slick-slider-charity {
 	}
 
 	button.slick-next.slick-arrow {
-	    background-image: url('http://ejigsawdev.co.uk/chrispercival/wp-content/themes/ChrisPercival/img/charity-arrow-right.png');
-	    background-repeat: no-repeat;
+		background-image: url('../ChrisPercival/img/charity-arrow-right.png');
+		background-repeat: no-repeat;
 	    width: 20px;
 	    height: 25px;
 	    right: 0px !important;
