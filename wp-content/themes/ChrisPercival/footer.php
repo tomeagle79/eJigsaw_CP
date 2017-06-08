@@ -19,7 +19,7 @@
 
                     	<ul class="legal">
                     		<li>Designed by <a href="https://www.ejigsaw.co.uk/">eJigsaw</a> -</li>
-                    		<li><a href="">Sitemap -</a></li>
+                    		<li><a href="<?php the_permalink(5814); ?>">Sitemap -</a></li>
                     		<li>Chris Percival <?php the_time('Y'); ?></li>
                     	</ul>
         			</div>
@@ -48,7 +48,7 @@
                         <img id="footer-logo" src="<?php bloginfo( 'template_url'); ?>/img/logo-white.png" alt="Chris Percival logo">
                         <ul class="legal">
                             <li>Designed by <a href="https://www.ejigsaw.co.uk/">eJigsaw</a> -</li>
-                            <li><a href="">Sitemap -</a></li>
+                            <li><a href="<?php the_permalink(5814); ?>" >Sitemap -</a></li>
                             <li>Chris Percival <?php the_time('Y'); ?></li>
                         </ul>
                     </div>

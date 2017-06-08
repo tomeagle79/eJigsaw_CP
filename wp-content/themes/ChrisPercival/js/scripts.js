@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
         
         });
 
-        */
+    */
 
 // Toggles nav on and off when icon clicked
 
@@ -31,10 +31,7 @@ jQuery(document).ready(function($){
    $(window).resize(function () {
             var headerHeight = $('header').height();
             $('.first').css('padding-top', headerHeight + 20);
-
-            // console.log(headerHeight);
-  
-    });
+        });
 
 
    // Shows/hides the social sharing options
@@ -44,17 +41,12 @@ jQuery(document).ready(function($){
                     $("ul.social-share").toggle(300, 'swing');
                 
                 });
-
-
-
-
-
-        });
+            });
 
 
 (function($) {
     
-    /* Changes the number of slides shown in charity slider  */   
+    /* Changes the number of slides shown in charity slider    
         
         function changeSlick(){
                 $('#slick-slider-1').attr("data-slick", {"slidesToShow":2} );
@@ -70,6 +62,24 @@ jQuery(document).ready(function($){
             
             
         });
+
+    */ 
     
 })( jQuery ); // no conflict wrapper for changeSlick
 
+
+// dynamic resize of social li heights, depending on tallest li
+
+jQuery(document).ready(function($){
+
+    
+    $(function() {
+        $('.item').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+            });
+    });
+
+});
