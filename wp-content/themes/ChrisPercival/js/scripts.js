@@ -84,10 +84,24 @@ jQuery(document).ready(function($){
 
 });
 
+// dynamic resize of business slider sections depending on tallest li
+
+jQuery(document).ready(function($){
+    
+    $(function() {
+        $('.bizSlick-inner').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+            });
+    });
+
+});
+
 // dynamic resize of business logo heights depending on tallest li
 
 jQuery(document).ready(function($){
-
     
     $(function() {
         $('.bizSlick-img').matchHeight({
@@ -138,7 +152,7 @@ jQuery(function(){
         var padded = (compheight - jQuery(this).height()) / 2;
         if( padded > 0 ){
             jQuery(this).css({
-                paddingTop: padded+'px'
+                paddingTop: padded +'px'
             });
         }
     });

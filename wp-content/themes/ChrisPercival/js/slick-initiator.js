@@ -17,8 +17,8 @@ jQuery(document).ready(function($){
         dots: false,
         arrows: true,
         slidesToShow: 3,
-        slidesToScroll: 3,
-        autoplay: true,
+        slidesToScroll: 1,
+        autoplay: false,
         autoplaySpeed: 4000,
         speed: 1000,
          responsive: [
@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
                   }
                 },
                 {
-                  breakpoint: 480,
+                  breakpoint: 768,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

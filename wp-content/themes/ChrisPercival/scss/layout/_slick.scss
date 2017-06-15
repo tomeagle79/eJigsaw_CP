@@ -43,9 +43,6 @@ div.slick-slider-wrapper::before {
 	}
 }
 
-
-
-
 .slick-slide img {
 	width: 100%;
 	height: auto;
@@ -81,8 +78,48 @@ ul.slick-dots {
 
 // Bottom slick slider homepage
 
-div#slider-jigsaw {
-	
+	button {z-index: 1}
+
+	button.slick-prev.slick-arrow {
+	    background-image: url('../ChrisPercival/img/leftJigsaw.png');
+	    background-repeat: no-repeat;
+	    width: 20px;
+	    height: 25px;
+	    left: 0px !important;
+	}
+
+	.slick-prev:before {
+	    content: '' !important;
+	}
+
+	button.slick-next.slick-arrow {
+	    background-image: url('../ChrisPercival/img/rightJigsaw.png');
+		background-repeat: no-repeat;
+	    width: 20px;
+	    height: 25px;
+	    right: 0px !important;
+	}
+
+	.slick-next:before {
+	    content: '' !important;
+	}
+
+	div.bizSlick-inner {
+		width: 75%;
+		margin: 0 auto;
+		padding: 30px 15px;
+	}
+
+	div.bizSlick-img {
+		width: 100%;
+
+		img {
+			// height: 100% !important;
+			// width: auto !important;
+		}
+	}
+
+	div.slick-slide {
 	hr, h2, p {
 		color: $dark-blue;
 		
@@ -102,47 +139,4 @@ div#slider-jigsaw {
 		font-size: 12px;
 		font-family: 'Raleway', sans-serif;
 	}
-
-	
-
-	button {z-index: 1}
-
-	button.slick-prev.slick-arrow {
-	    background-image: url('../ChrisPercival/img/leftJigsaw.png');
-	    background-repeat: no-repeat;
-	    width: 20px;
-	    height: 25px;
-	    left: 50px !important;
-	}
-
-	.slick-prev:before {
-	    content: '' !important;
-	}
-
-	button.slick-next.slick-arrow {
-	    background-image: url('../ChrisPercival/img/rightJigsaw.png');
-		background-repeat: no-repeat;
-	    width: 20px;
-	    height: 25px;
-	    right: 50px !important;
-	}
-
-	.slick-next:before {
-	    content: '' !important;
-	}
 }
-
-	div.bizSlick-inner {
-		width: 75%;
-		margin: 0 auto;
-		padding: 30px;
-	}
-
-	div.bizSlick-img {
-		width: 100%;
-
-		img {
-			// height: 100% !important;
-			// width: auto !important;
-		}
-	}

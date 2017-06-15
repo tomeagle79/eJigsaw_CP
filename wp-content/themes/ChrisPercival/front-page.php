@@ -129,8 +129,8 @@
 
 			</section>
 
-			<div id="slider-jigsaw">
-				<div class="bizSlick">
+			<section id="slider-jigsaw clearfix">
+				<div class="bizSlick main">
 					<div class="">
 						<div class="clearfix bizSlick-inner">
 							<div class="bizSlick-img clearfix">
@@ -160,6 +160,18 @@
 							<h2>JIGSAW SPECIAL PROJECTS</h2>
 							<p>CEO and Founder</p>
 						</div>
+
+					</div>
+					<div class="">
+						<div class="clearfix bizSlick-inner">
+							<div class="bizSlick-img clearfix">
+								<img src="<?php bloginfo( 'template_url'); ?>/img/jig-spec-logo.png" alt="slick-pic" class="bizImg">
+							</div>
+							<hr>
+							<h2>JIGSAW SPECIAL PROJECTS</h2>
+							<p>CEO and Founder</p>
+						</div>
+						
 					</div>
 				</div>
 			</div>
