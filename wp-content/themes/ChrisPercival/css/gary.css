@@ -1,0 +1,72 @@
+.blog-page-sidebar h2 {
+  margin-bottom: 22px;
+}
+div.blog-page-sidebar div.blog-categories ul.double li.cat-item a, div.blog-page-sidebar div.blog-recent-posts ul li a {
+  font-size: 16px;
+}
+.bio-timeline {
+  margin: 0 12.5%;
+}
+.clear {
+  clear: both;
+}
+section#social ul#social-cards li:nth-child(even) p {
+  width: 85%;
+  max-width: initial;
+}
+.ctf-tweet-text-media-wrap {
+  display: none !important;
+}
+
+.footer-social {
+  text-align: right;
+  margin-right: 0;
+}
+.footer-social li {
+  margin-left: 8px;
+}
+.footer-social li a {
+  background: #FFF;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  border-radius: 17px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.footer-social li a i {
+  color: #3a97b5;
+  font-size: 22px;
+  line-height: 32px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.footer-social li a:hover {
+  background: #3a97b5;
+}
+.footer-social li a:hover i {
+  color: #FFF;
+}
+a.button-contact {
+  margin: 0 auto;
+}
+.footer-container {
+  max-width: 1200px;
+}
+img.footer-logo {
+  margin: 0;
+  text-align: left;
+}
+ul.legal {
+  margin-right: 0;
+}
+footer {
+  padding: 65px 0;
+}
+footer .full-width-item {
+  width: 100%;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}

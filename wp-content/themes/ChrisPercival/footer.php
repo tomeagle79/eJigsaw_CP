@@ -1,13 +1,13 @@
-         	<footer id="footer" class="container clearfix">
+            <footer id="footer" class="container clearfix">
                     <div class="footer-container main">
-            			<div class="footer-section footer-desktop mimicheight">
-            				<img class="footer-logo" src="<?php bloginfo( 'template_url'); ?>/img/logo-white.png" alt="Chris Percival logo">
-            			</div>
-            			<div class="footer-section footer-desktop mimicheight">
+                        <div class="footer-section footer-desktop mimicheight">
+                            <img class="footer-logo" src="<?php bloginfo( 'template_url'); ?>/img/logo-white.png" alt="Chris Percival logo">
+                        </div>
+                        <div class="footer-section footer-desktop mimicheight">
                             <a href="http://dev.ejigsaw.co.uk/chrispercival/contact/" class="button-contact">Contact</a>
-            			</div>
-            			<div class="footer-section footer-desktop mimicheight">
-            				
+                        </div>
+                        <div class="footer-section footer-desktop mimicheight">
+                            
                             <ul class="footer-social">
                                 <li><a href="https://www.linkedin.com/in/chris-percival-19189814/" target="_blank" title="Chris Percival on Linkedin"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="https://twitter.com/ChrisPercival_" target="_blank" title="Follow Chris on Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
 
- <!--   mobile version of footer -->              		
+ <!--   mobile version of footer -->                    
             
                     <div class="footer-section footer-mobile">
                         <a href="http://dev.ejigsaw.co.uk/chrispercival/contact/" class="button-contact">Contact</a>
@@ -55,4 +55,3 @@
       </body>
 </html>
         
- 

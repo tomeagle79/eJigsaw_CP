@@ -82,6 +82,28 @@ ul.slick-dots {
 // Bottom slick slider homepage
 
 div#slider-jigsaw {
+	
+	hr, h2, p {
+		color: $dark-blue;
+		
+	}
+
+	h2, p {
+		color: $dark-blue;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 12px;
+		@include dark;
+	}
+	
+	p {
+		font-size: 12px;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	
 
 	button {z-index: 1}
 
@@ -109,3 +131,18 @@ div#slider-jigsaw {
 	    content: '' !important;
 	}
 }
+
+	div.bizSlick-inner {
+		width: 75%;
+		margin: 0 auto;
+		padding: 30px;
+	}
+
+	div.bizSlick-img {
+		width: 100%;
+
+		img {
+			// height: 100% !important;
+			// width: auto !important;
+		}
+	}

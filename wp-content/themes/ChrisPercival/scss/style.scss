@@ -231,3 +231,12 @@ section#bottom-slider-container {
 	 }
 }
 
+// Gary added CSS
+
+section#social ul#social-cards li:nth-child(even) p {
+  width: 85%;
+  max-width: initial;
+}
+.ctf-tweet-text-media-wrap {
+  display: none !important;
+}

@@ -132,13 +132,34 @@
 			<div id="slider-jigsaw">
 				<div class="bizSlick">
 					<div class="">
-						<img src="<?php bloginfo( 'template_url'); ?>/img/slider_images/slider-ejig.png" alt="slick-pic">
+						<div class="clearfix bizSlick-inner">
+							<div class="bizSlick-img clearfix">
+								<img src="<?php bloginfo( 'template_url'); ?>/img/jig-ejig-logo.png" alt="slick-pic" class="bizImg">
+							</div>
+							<hr>
+							<h2>EJIGSAW</h2>
+							<p>CEO and Founder</p>
+						</div>
 					</div>
 					<div class="">
-						<img src="<?php bloginfo( 'template_url'); ?>/img/slider_images/slider-spec.png" alt="slick-pic">
+						<div class="clearfix bizSlick-inner">
+							<div class="bizSlick-img clearfix">
+								<img src="<?php bloginfo( 'template_url'); ?>/img/jig-med-logo.png" alt="slick-pic" class="bizImg">
+							</div>
+							<hr>
+							<h2>JIGSAW MEDICAL</h2>
+							<p>CEO and Founder</p>
+						</div>
 					</div>
 					<div class="">
-						<img src="<?php bloginfo( 'template_url'); ?>/img/slider_images/slider-med.png" alt="slick-pic">
+						<div class="clearfix bizSlick-inner">
+							<div class="bizSlick-img clearfix">
+								<img src="<?php bloginfo( 'template_url'); ?>/img/jig-spec-logo.png" alt="slick-pic" class="bizImg">
+							</div>
+							<hr>
+							<h2>JIGSAW SPECIAL PROJECTS</h2>
+							<p>CEO and Founder</p>
+						</div>
 					</div>
 				</div>
 			</div>

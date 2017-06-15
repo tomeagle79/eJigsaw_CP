@@ -84,6 +84,22 @@ jQuery(document).ready(function($){
 
 });
 
+// dynamic resize of business logo heights depending on tallest li
+
+jQuery(document).ready(function($){
+
+    
+    $(function() {
+        $('.bizSlick-img').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+            });
+    });
+
+});
+
 
 
 jQuery(function(){
