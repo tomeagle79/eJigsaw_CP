@@ -51,7 +51,9 @@
 				 		<div class="item">
 					 		<img src="<?php bloginfo( 'template_url'); ?>/img/twitter_blue-icon.png" alt="Twitter icon" />
 							<h3>TWITTER FEED</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+							<?php
+								echo do_shortcode('[custom-twitter-feeds]');
+							?>
 						</div>
 						<img class="ellipse" src="<?php bloginfo( 'template_url'); ?>/img/ellipse.png" alt="ellipse"/>
 					</li>

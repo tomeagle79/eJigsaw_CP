@@ -15,9 +15,9 @@ Home page
 			<?php
 			$paged = ( get_query_var('paged')) ? get_query_var('paged') : 1;
 			$query_args = array(
-				'post_type' => 'post',
+				'post_type'      => 'post',
 				'posts_per_page' => 5,
-				'paged' => $paged
+				'paged'          => $paged
 			);
 			?>
 			<?php $the_query = new WP_Query( $query_args ); ?>
@@ -26,13 +26,13 @@ Home page
 				
 				<div class="blog-left blog-post-section">
 					<div class="blog-img-wrapper clearfix">
-						<a href="<?php the_permalink(); ?>" target="_blank">
-							<?php the_post_thumbnail(array(150,150)); ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail(); ?>
 						</a>
 					</div>
 				</div>
 				<div class="blog-right blog-post-section">
-					<h2 class="h2-blog"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
+					<h2 class="h2-blog"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<hr>
 					<p class="p-time"><span class="time"><?php the_time('F j, Y'); ?></span></p>
 					<p><?php the_excerpt(); ?></p>

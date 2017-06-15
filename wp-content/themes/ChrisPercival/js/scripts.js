@@ -83,3 +83,48 @@ jQuery(document).ready(function($){
     });
 
 });
+
+
+
+jQuery(function(){
+
+    var twitterlink = jQuery(".ctf-tweet-actions a").attr('href');
+    jQuery(".ctf-tweet-text").wrap('<a href="'+twitterlink+'" target="_blank"></a>');
+    jQuery(".ctf-tweet-actions a").remove();
+    var ctfparent = jQuery("#ctf").parent();
+    var ctfgparent = jQuery(ctfparent).parent();
+    jQuery(".ellipse", ctfgparent).wrap('<a href="'+twitterlink+'" target="_blank"></a>');
+
+    var i = 1;
+    jQuery("ul.double li").each(function(){
+        if( i == 2 ){
+            jQuery("<div class='clear'></div>").insertAfter(this);
+            i = 1;
+        } else {
+            i++;
+        }
+    });
+
+
+});
+
+
+
+// Mimicheight
+jQuery(function(){
+
+    var footerheights = [];
+    jQuery("footer .mimicheight").each(function(){
+        footerheights.push(jQuery(this).height());
+    });
+    var compheight = Math.max.apply(Math, footerheights);
+    jQuery("footer .mimicheight").each(function(){
+        var padded = (compheight - jQuery(this).height()) / 2;
+        if( padded > 0 ){
+            jQuery(this).css({
+                paddingTop: padded+'px'
+            });
+        }
+    });
+
+});
