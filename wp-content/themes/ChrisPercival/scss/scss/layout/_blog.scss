@@ -1,0 +1,468 @@
+div.main-blog {
+	background-color: $blog-blue;
+}
+
+div.blog-page-sidebar {
+	width: calc(36% - 20px);
+	float: left;
+
+		h2 {
+			@include dark;
+			text-align: center;
+			margin: 0;
+		}
+
+div.blog-recent-posts {
+		ul {
+			margin-left: 20px;
+			
+			li {
+				display: list-item;
+				color: $font-gray;
+				line-height: 30px;
+				a {
+					color: $font-gray;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+
+	div.blog-categories {
+		ul.double {
+			margin-left: 20px;
+			list-style-position: outside;
+
+			
+			li.cat-item {
+				display: list-item;
+				float: left;
+				// display: inline-block;
+				width: 45% !important;
+				color: $font-gray;
+				line-height: 30px;
+				
+				&:nth-child(2n) {
+					float: right;
+				}
+
+				a {
+					color: $font-gray;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* ****************** Search form ************************************ */
+
+form#searchform {
+
+	label {
+		font-family: 'Raleway', sans-serif;
+		color: $font-gray;
+		font-size: 13px;
+		float: left;
+	}
+
+	input#s {
+		float: right;
+		width: 100%;
+		height: 20px;
+		color: $font-gray;
+		font-size: 13px;
+	}
+
+}
+
+/*********************************************************/
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+  width: 70%;
+  float: right;
+}
+
+.search input {
+  width: '';
+  height: 32px;
+
+  // background: #fcfcfc;
+  // border: 1px solid #aaa;
+  // border-radius: 5px;
+  // box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { 
+	text-indent: '';
+}
+
+.search .fa-search { 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+
+@media (max-width: 568px){
+	div.search {
+		width: 100%;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1068px){
+	div.search {
+		width: 100%;
+	}
+}
+
+
+/***********************************************************/
+
+// To set the diplay of the date to small-caps
+.time {
+	font-variant: small-caps;
+}
+
+// Date font color in recent blog posts
+.recent-time {
+	color: $font-light-gray;
+}
+
+/******************* Right hand section  *****************************/
+
+
+div.blog-page-right {
+	width: 64%;
+	float: right;
+}
+
+div.blog-post {
+	color: $font-gray;
+
+		hr {
+			margin-bottom: 0px;
+		}
+		
+		h2 {
+			a {
+				color: $font-gray;
+			}
+		}
+
+		p {
+			font-size: 14px;
+
+			&.p-time { margin-top: 2px;}
+		}
+
+		button {
+			border: none;
+			background-color: $font-gray;
+			color: white;
+			font-family: 'Raleway', sans-serif;
+			font-variant: small-caps;
+			padding: 5px;
+			float: right;
+
+				&:hover {
+					opacity: 0.75;
+				}
+
+				img {
+					width: 16px;
+    				margin-left: 10px;
+				}
+		}
+	}
+
+.blog-post-section {
+	// float: left;
+
+	padding: 0 2%;
+
+	h1, h2, h3 {
+		font-size: 18px;
+	  	font-family: "Raleway";
+	  	color: rgb(160, 160, 160);
+	  	font-weight: bold;
+	  	line-height: 1.2;
+	  	border: 0;
+	  	text-transform: none;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 0px;
+	}
+
+	a {
+		color: inherit; 
+	}
+}
+
+.blog-left {
+	width: 40%;
+	float: left;
+
+		.blog-img-wrapper {
+			// position: relative;
+			// height: 225px;
+			// overflow: hidden;
+
+			img {
+				//position: absolute;
+				//left: 50%;
+				//transform: translateX(-50%);
+				}
+			}
+		}
+
+.blog-right {
+	width: 60%;
+	float: right;
+}
+
+.blog-border-no-sides {
+	border-top: 2px solid $dark-blue;
+	border-bottom: 2px solid $dark-blue;
+	margin-top: 20px;
+    padding: 4% 0;
+    background: transparent;
+
+	    &:last-child {
+	    		margin-bottom: 20px;
+	    }
+}
+
+div.blog-border-box {
+
+	border: 2px solid $dark-blue;
+	margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+
+    	&:last-child {
+    		margin-bottom: 20px;
+    }
+}
+
+h2.h2-blog {
+	font-size: 18px;
+  	font-family: "Raleway";
+  	color: rgb(160, 160, 160);
+  	font-weight: bold;
+  	line-height: 1.2;
+  	margin-top: 0;
+}
+
+img.attachment-full.size-full.wp-post-image {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 800px) {
+	div.blog-page-sidebar {
+	width: 100%;
+	float: left;
+
+		h2 {
+			@include dark;
+			text-align: center;
+		}
+}
+
+div.blog-page-right {
+	width: 100%;
+	float: left;
+	padding-left: 0;
+}
+}
+
+@media (max-width: 700px){
+
+	h2.h2-blog, .blog-post-section h1 {
+		margin-top: 10px;
+	}
+
+	.blog-left {
+		width: 100%;
+	}
+
+	.blog-right {
+		width: 100%;
+	}
+}
+
+/********** Next/Previous pagination ***********************/
+$pag-margin: 20px;
+
+.blog-border-box.clearfix.pag {
+    margin: 20px 0;
+    width: calc(50% - 10px);
+	a {color: $font-gray;}
+}
+
+.pag {
+	
+}
+
+div.navigation {
+	text-align: center;
+}
+
+// Left pagination
+
+.blog-border-box.clearfix.pag.pag-left {
+    background-image: url('../ChrisPercival/img/charity-arrow-left.png');
+    background-repeat: no-repeat;
+    background-position: 5% 86%;
+
+    float: left;
+	p {font-size: 12px; vertical-align: middle; float:left; margin: 0; text-align: right}
+
+	.left {
+	float: left;
+	width: 50%;
+
+	img {float: left}
+}
+
+	.right {
+		float: right;
+		width: 40%;
+
+		img {float: right}
+		}
+}
+
+
+
+// Right pagination
+
+.blog-border-box.clearfix.pag.pag-right {
+
+	background-image: url('../ChrisPercival/img/charity-arrow-right.png');
+    background-repeat: no-repeat;
+    background-position: 95% 86%;
+
+	float: right;
+	p {font-size: 12px; vertical-align: middle; float: right; margin: 0}
+
+	.left {
+	float: left;
+	width: 40%;
+
+	img {float: left}
+}
+
+	.right {
+		float: right;
+		width: 50%;
+		
+		p {text-align: right;}
+	}
+}
+
+img.arrow-green {
+	width: 12px;
+}
+
+$pag-margin: calc(50% - calc(percentage(340/420) / 2));
+
+@media (max-width: 680px){
+	.blog-border-box.clearfix.pag {
+		width: percentage(340/420);
+		float: none !important;
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1068px){
+	.blog-border-box.clearfix.pag {
+		width: 100%;
+	}
+}
+
+
+/******** Numeric pagination on blogs page ********************/
+
+nav.pagination {
+
+	img {
+		width: inherit;
+	}
+
+	a.page-numbers, span.page-numbers {
+		color: $font-gray;
+		font-size: 14px;
+		font-family: 'Raleway', sans-serif;
+			
+			&:first-of-type:before {
+				content: '';
+			}
+
+			&:before {
+			content: ' ';
+			
+		}
+	}
+}
+
+/******** Social share icons ***********************/
+
+#social-share-icon {
+	position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #3a97b5;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+ul.social-share{
+	display: none;
+	padding:10px;
+	margin:0;
+	background-color: $dark-blue;
+}
+ul.social-share li{
+	list-style:none;
+	display:inline-block;
+	margin:0 0.8em 1em 0;
+	font-size:1em;
+}
+ul.social-share li a{
+	font-size:20px;
+}
+ul.social-share li a, ul.social-share li a:hover{
+	text-decoration:none;
+}
+ul.social-share li i{
+	font-size:20px;
+	margin-right:5px;
+}
+
+
+// Gary added css
+
+.blog-page-sidebar h2 {
+  margin-bottom: 22px;
+}
+div.blog-page-sidebar div.blog-categories ul.double li.cat-item a, div.blog-page-sidebar div.blog-recent-posts ul li a {
+  font-size: 16px;
+}
+.bio-timeline {
+  margin: 0 12.5%;
+}

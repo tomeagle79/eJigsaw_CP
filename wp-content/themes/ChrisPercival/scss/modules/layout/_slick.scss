@@ -1,0 +1,142 @@
+// Top slider section homepage
+
+div.mySlick {
+	height: 100vh;
+}
+
+div.slick-slider-wrapper::before {
+	content: '';
+}
+
+.mySlickSlide.slick-slide {
+		height: 100vh;
+		position: relative;
+		background-size: cover; 
+		background-position: 
+		center center; 
+
+		h2 {
+			@include centerXY;
+			@include whiteOnDark;
+			font-size: 34px;
+			background-color: transparent;
+			text-shadow: 0px 10px 19.92px rgba(0, 0, 0, 0.17);
+			text-align: center;
+			span {
+				font-size: 87px;
+			}
+		}
+	}
+
+// responsive
+
+@media screen and (max-width: 480px){
+	.mySlickSlide.slick-slide {
+		
+		h2 {
+			font-size: 23px;
+			
+			span {
+				font-size: 62px;
+			}
+		}
+	}
+}
+
+.slick-slide img {
+	width: 100%;
+	height: auto;
+}
+
+ul.slick-dots {
+	bottom: 48px;
+		li {
+
+			button {
+				border-radius: 50%;
+				border: 3px solid white;
+				background-color: white;
+
+					&::before  {
+						content: '';
+						width: 15px;
+					}
+				}
+
+				&.slick-active {
+							button {
+								background-color: transparent;
+							}
+						}
+
+		}
+	}
+
+	
+
+	
+
+// Bottom slick slider homepage
+
+	button {z-index: 1}
+
+	button.slick-prev.slick-arrow {
+	    background-image: url('../ChrisPercival/img/leftJigsaw.png');
+	    background-repeat: no-repeat;
+	    width: 20px;
+	    height: 25px;
+	    left: 0px !important;
+	}
+
+	.slick-prev:before {
+	    content: '' !important;
+	}
+
+	button.slick-next.slick-arrow {
+	    background-image: url('../ChrisPercival/img/rightJigsaw.png');
+		background-repeat: no-repeat;
+	    width: 20px;
+	    height: 25px;
+	    right: 0px !important;
+	}
+
+	.slick-next:before {
+	    content: '' !important;
+	}
+
+	div.bizSlick-inner {
+		width: 75%;
+		margin: 0 auto;
+		padding: 30px 15px;
+	}
+
+	div.bizSlick-img {
+		width: 100%;
+
+		img {
+			// height: 100% !important;
+			// width: auto !important;
+		}
+	}
+
+	div.slick-slide {
+	hr, h2, p {
+		color: $dark-blue;
+		
+	}
+
+	h2, p {
+		color: $dark-blue;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 12px;
+		@include dark;
+	}
+	
+	p {
+		font-size: 12px;
+		font-family: 'Raleway', sans-serif;
+	}
+}

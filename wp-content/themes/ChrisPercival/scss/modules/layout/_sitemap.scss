@@ -1,0 +1,42 @@
+div.wsp-container {
+	li {
+	display: list-item;
+
+		&.wsp-post {
+	    list-style-type: disc;
+	    list-style-position:inside;
+	    text-indent: 10px;
+		}
+
+		&.page_item.page-item-5814.current_page_item {
+	    background-color: inherit;
+
+    		.current_page_item a {
+				color: inherit;
+    		}
+    	}
+	}
+
+	ul.wsp-posts-list {
+    list-style-type: none;
+	}
+
+	li.wsp-post {
+		list-style-type: disc;
+	    list-style-position:inside;
+	    text-indent: 10px;
+
+	}
+	
+	* {
+		color: #000;
+	}
+	
+	margin-bottom: 20px;
+	}
+
+
+	li.page_item.page-item-5814.current_page_item {
+    background-color: inherit;
+    color: inherit;
+}
